@@ -1,0 +1,6097 @@
+@dc:description "Docentes da UFRPE — Tempo de Carreira e Impacto Científico"
+description <http://gic.ufrpe.br/cti/description/docentes-ufrpe#> as docentes-ufrpe {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+	uses <http://gic.ufrpe.br/cti/vocabulary/cti#> as cti
+
+	// =================================================================
+	// PROGRAMAS DE PÓS-GRADUAÇÃO (PPG)
+	// =================================================================
+
+	instance ppg_33283010001P5 : cti:PPG [
+		cti:cd_programa_ies "33283010001P5"
+		cti:nm_programa_ies "ENSINO DE FÍSICA - PROFIS"
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+	]
+
+	instance ppg_53045009001P3 : cti:PPG [
+		cti:cd_programa_ies "53045009001P3"
+		cti:nm_programa_ies "ADMINISTRAÇÃO PÚBLICA EM REDE NACIONAL"
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+	]
+
+	instance ppg_25003011071P8 : cti:PPG [
+		cti:cd_programa_ies "25003011071P8"
+		cti:nm_programa_ies "BIODIVERSIDADE E CONSERVAÇÃO"
+		cti:nm_area_conhecimento "ECOLOGIA"
+	]
+
+	instance ppg_25003011073P0 : cti:PPG [
+		cti:cd_programa_ies "25003011073P0"
+		cti:nm_programa_ies "SAÚDE ÚNICA"
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+	]
+
+	instance ppg_22003010017P5 : cti:PPG [
+		cti:cd_programa_ies "22003010017P5"
+		cti:nm_programa_ies "BIOTECNOLOGIA - REDE RENORBIO"
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+	]
+
+	instance ppg_25003011003P2 : cti:PPG [
+		cti:cd_programa_ies "25003011003P2"
+		cti:nm_programa_ies "CIÊNCIA DO SOLO"
+		cti:nm_area_conhecimento "AGRONOMIA"
+	]
+
+	instance ppg_25003011001P0 : cti:PPG [
+		cti:cd_programa_ies "25003011001P0"
+		cti:nm_programa_ies "BIODIVERSIDADE"
+		cti:nm_area_conhecimento "BOTÂNICA"
+	]
+
+	instance ppg_25003011074P7 : cti:PPG [
+		cti:cd_programa_ies "25003011074P7"
+		cti:nm_programa_ies "ENGENHARIA FÍSICA"
+		cti:nm_area_conhecimento "MATERIAIS"
+	]
+
+	instance ppg_31075010001P2 : cti:PPG [
+		cti:cd_programa_ies "31075010001P2"
+		cti:nm_programa_ies "MATEMÁTICA EM REDE NACIONAL"
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+	]
+
+	instance ppg_31001017169P2 : cti:PPG [
+		cti:cd_programa_ies "31001017169P2"
+		cti:nm_programa_ies "QUÍMICA EM REDE NACIONAL"
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+	]
+
+	instance ppg_33004137068P8 : cti:PPG [
+		cti:cd_programa_ies "33004137068P8"
+		cti:nm_programa_ies "PROEF - EDUCAÇÃO FÍSICA EM REDE NACIONAL"
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+	]
+
+	instance ppg_25003011002P6 : cti:PPG [
+		cti:cd_programa_ies "25003011002P6"
+		cti:nm_programa_ies "FITOPATOLOGIA"
+		cti:nm_area_conhecimento "AGRONOMIA"
+	]
+
+	instance ppg_27001016180P4 : cti:PPG [
+		cti:cd_programa_ies "27001016180P4"
+		cti:nm_programa_ies "REDE NORDESTE DE ENSINO - RENOEN"
+		cti:nm_area_conhecimento "ENSINO"
+	]
+
+	instance ppg_25003011075P3 : cti:PPG [
+		cti:cd_programa_ies "25003011075P3"
+		cti:nm_programa_ies "ESTUDOS DA LINGUAGEM"
+		cti:nm_area_conhecimento "LETRAS"
+	]
+
+	instance ppg_25020013042P2 : cti:PPG [
+		cti:cd_programa_ies "25020013042P2"
+		cti:nm_programa_ies "AGROECOLOGIA E DESENVOLVIMENTO TERRITORIAL"
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+	]
+
+	instance ppg_23001011069P5 : cti:PPG [
+		cti:cd_programa_ies "23001011069P5"
+		cti:nm_programa_ies "LETRAS"
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+	]
+
+	instance ppg_25003011077P6 : cti:PPG [
+		cti:cd_programa_ies "25003011077P6"
+		cti:nm_programa_ies "CIÊNCIAS SOCIAIS"
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+	]
+
+	instance ppg_25003011076P0 : cti:PPG [
+		cti:cd_programa_ies "25003011076P0"
+		cti:nm_programa_ies "ENGENHARIA DE SISTEMAS DE ENERGIA (PPGESE)"
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+	]
+
+	instance ppg_23001011047P1 : cti:PPG [
+		cti:cd_programa_ies "23001011047P1"
+		cti:nm_programa_ies "DESENVOLVIMENTO E INOVAÇÃO TECNOLÓGICA EM MEDICAMENTOS"
+		cti:nm_area_conhecimento "FARMÁCIA"
+	]
+
+	instance ppg_25003011070P1 : cti:PPG [
+		cti:cd_programa_ies "25003011070P1"
+		cti:nm_programa_ies "CONTROLADORIA"
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+	]
+
+	instance ppg_25003011038P0 : cti:PPG [
+		cti:cd_programa_ies "25003011038P0"
+		cti:nm_programa_ies "EDUCAÇÃO, CULTURAS E IDENTIDADES"
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+	]
+
+	instance ppg_25003011036P8 : cti:PPG [
+		cti:cd_programa_ies "25003011036P8"
+		cti:nm_programa_ies "ENGENHARIA AMBIENTAL"
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+	]
+
+	instance ppg_25003011033P9 : cti:PPG [
+		cti:cd_programa_ies "25003011033P9"
+		cti:nm_programa_ies "ETNOBIOLOGIA E CONSERVAÇÃO DA NATUREZA"
+		cti:nm_area_conhecimento "ECOLOGIA"
+	]
+
+	instance ppg_25003011032P2 : cti:PPG [
+		cti:cd_programa_ies "25003011032P2"
+		cti:nm_programa_ies "INFORMÁTICA APLICADA"
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+	]
+
+	instance ppg_25003011030P0 : cti:PPG [
+		cti:cd_programa_ies "25003011030P0"
+		cti:nm_programa_ies "PRODUÇÃO VEGETAL"
+		cti:nm_area_conhecimento "AGRONOMIA"
+	]
+
+	instance ppg_25003011014P4 : cti:PPG [
+		cti:cd_programa_ies "25003011014P4"
+		cti:nm_programa_ies "ADMINISTRAÇÃO E DESENVOLVIMENTO"
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+	]
+
+	instance ppg_25003011005P5 : cti:PPG [
+		cti:cd_programa_ies "25003011005P5"
+		cti:nm_programa_ies "MEDICINA VETERINÁRIA"
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+	]
+
+	instance ppg_25003011024P0 : cti:PPG [
+		cti:cd_programa_ies "25003011024P0"
+		cti:nm_programa_ies "FÍSICA APLICADA"
+		cti:nm_area_conhecimento "FÍSICA"
+	]
+
+	instance ppg_25003011013P8 : cti:PPG [
+		cti:cd_programa_ies "25003011013P8"
+		cti:nm_programa_ies "CIÊNCIAS FLORESTAIS"
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+	]
+
+	instance ppg_25003011022P7 : cti:PPG [
+		cti:cd_programa_ies "25003011022P7"
+		cti:nm_programa_ies "BIOCIÊNCIA ANIMAL"
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+	]
+
+	instance ppg_25003011006P1 : cti:PPG [
+		cti:cd_programa_ies "25003011006P1"
+		cti:nm_programa_ies "ZOOTECNIA"
+		cti:nm_area_conhecimento "ZOOTECNIA"
+	]
+
+	instance ppg_25003011012P1 : cti:PPG [
+		cti:cd_programa_ies "25003011012P1"
+		cti:nm_programa_ies "ENSINO DAS CIÊNCIAS"
+		cti:nm_area_conhecimento "ENSINO"
+	]
+
+	instance ppg_25003011021P0 : cti:PPG [
+		cti:cd_programa_ies "25003011021P0"
+		cti:nm_programa_ies "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+	]
+
+	instance ppg_25003011020P4 : cti:PPG [
+		cti:cd_programa_ies "25003011020P4"
+		cti:nm_programa_ies "QUIMICA"
+		cti:nm_area_conhecimento "QUÍMICA"
+	]
+
+	instance ppg_25003011010P9 : cti:PPG [
+		cti:cd_programa_ies "25003011010P9"
+		cti:nm_programa_ies "BIOMETRIA E ESTATÍSTICA APLICADA"
+		cti:nm_area_conhecimento "AGRONOMIA"
+	]
+
+	instance ppg_25003011019P6 : cti:PPG [
+		cti:cd_programa_ies "25003011019P6"
+		cti:nm_programa_ies "HISTÓRIA"
+		cti:nm_area_conhecimento "HISTÓRIA"
+	]
+
+	instance ppg_25003011011P5 : cti:PPG [
+		cti:cd_programa_ies "25003011011P5"
+		cti:nm_programa_ies "RECURSOS PESQUEIROS E AQUICULTURA"
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+	]
+
+	instance ppg_25003011018P0 : cti:PPG [
+		cti:cd_programa_ies "25003011018P0"
+		cti:nm_programa_ies "ENGENHARIA AGRÍCOLA"
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+	]
+
+	instance ppg_25003011017P3 : cti:PPG [
+		cti:cd_programa_ies "25003011017P3"
+		cti:nm_programa_ies "ENTOMOLOGIA"
+		cti:nm_area_conhecimento "AGRONOMIA"
+	]
+
+	instance ppg_25003011015P0 : cti:PPG [
+		cti:cd_programa_ies "25003011015P0"
+		cti:nm_programa_ies "AGRONOMIA ( MELHORAMENTO GENÉTICO DE PLANTAS)"
+		cti:nm_area_conhecimento "AGRONOMIA"
+	]
+
+	instance ppg_25003011029P1 : cti:PPG [
+		cti:cd_programa_ies "25003011029P1"
+		cti:nm_programa_ies "TECNOLOGIA E GESTÃO EM EDUCAÇÃO A DISTÂNCIA"
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+	]
+
+	instance ppg_25003011016P7 : cti:PPG [
+		cti:cd_programa_ies "25003011016P7"
+		cti:nm_programa_ies "EXTENSÃO RURAL E DESENVOLVIMENTO LOCAL"
+		cti:nm_area_conhecimento "AGRONOMIA"
+	]
+
+	instance ppg_25003011027P9 : cti:PPG [
+		cti:cd_programa_ies "25003011027P9"
+		cti:nm_programa_ies "CIÊNCIA ANIMAL E PASTAGENS"
+		cti:nm_area_conhecimento "ZOOTECNIA"
+	]
+
+	instance ppg_25003011028P5 : cti:PPG [
+		cti:cd_programa_ies "25003011028P5"
+		cti:nm_programa_ies "PRODUÇÃO AGRÍCOLA"
+		cti:nm_area_conhecimento "AGRONOMIA"
+	]
+
+	instance ppg_25003011025P6 : cti:PPG [
+		cti:cd_programa_ies "25003011025P6"
+		cti:nm_programa_ies "SANIDADE E REPRODUÇÃO DE ANIMAIS DE PRODUÇÃO"
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+	]
+
+	instance ppg_25003011072P4 : cti:PPG [
+		cti:cd_programa_ies "25003011072P4"
+		cti:nm_programa_ies "CIÊNCIAS AMBIENTAIS"
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+	]
+
+	instance ppg_25003011037P4 : cti:PPG [
+		cti:cd_programa_ies "25003011037P4"
+		cti:nm_programa_ies "CONSUMO, COTIDIANO E DESENVOLVIMENTO SOCIAL"
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+	]
+
+	instance ppg_25003011031P6 : cti:PPG [
+		cti:cd_programa_ies "25003011031P6"
+		cti:nm_programa_ies "CIÊNCIA ANIMAL TROPICAL"
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+	]
+
+	instance ppg_25003011009P0 : cti:PPG [
+		cti:cd_programa_ies "25003011009P0"
+		cti:nm_programa_ies "ZOOTECNIA"
+		cti:nm_area_conhecimento "ZOOTECNIA"
+	]
+
+	instance ppg_25003011026P2 : cti:PPG [
+		cti:cd_programa_ies "25003011026P2"
+		cti:nm_programa_ies "ECOLOGIA"
+		cti:nm_area_conhecimento "ECOLOGIA"
+	]
+
+	// =================================================================
+	// DOCENTES
+	// =================================================================
+
+	instance docente_000000 : cti:Docente [
+		cti:nm_docente "ALEXANDRO CARDOSO TENORIO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000001 : cti:Docente [
+		cti:nm_docente "REZILDA RODRIGUES OLIVEIRA"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000002 : cti:Docente [
+		cti:nm_docente "ALEXANDRE MENDES FERNANDES"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000003 : cti:Docente [
+		cti:nm_docente "LUCIANA SANDRA BASTOS DE SOUZA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000004 : cti:Docente [
+		cti:nm_docente "EDGAR ALBERTO DO ESPIRITO SANTO SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000005 : cti:Docente [
+		cti:nm_docente "JESSER FIDELIS DE SOUZA FILHO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000006 : cti:Docente [
+		cti:nm_docente "AIRTON TORRES CARVALHO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000007 : cti:Docente [
+		cti:nm_docente "RAFAEL ANTONIO DO NASCIMENTO RAMOS"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000008 : cti:Docente [
+		cti:nm_docente "JOSE VITOR MOREIRA LIMA FILHO"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000009 : cti:Docente [
+		cti:nm_docente "ROMILSON MARQUES CABRAL"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000010 : cti:Docente [
+		cti:nm_docente "VALDOMIRO SEVERINO DE SOUZA JUNIOR"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000011 : cti:Docente [
+		cti:nm_docente "YURI JACQUES AGRA BEZERRA DA SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000012 : cti:Docente [
+		cti:nm_docente "WICTOR CARLOS MAGNO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000013 : cti:Docente [
+		cti:nm_docente "NIVALDO FERREIRA DO NASCIMENTO"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000014 : cti:Docente [
+		cti:nm_docente "ANGELA CRISTINA ROCHA DE SOUZA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000015 : cti:Docente [
+		cti:nm_docente "CLISTENES WILLIAMS ARAUJO DO NASCIMENTO"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000016 : cti:Docente [
+		cti:nm_docente "JOSE DE LIMA ALBUQUERQUE"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000017 : cti:Docente [
+		cti:nm_docente "ANDRE LAURENIO DE MELO"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000018 : cti:Docente [
+		cti:nm_docente "RITA DE CASSIA CARVALHO MAIA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000019 : cti:Docente [
+		cti:nm_docente "LUCIANA DE OLIVEIRA FRANCO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000020 : cti:Docente [
+		cti:nm_docente "JORGE DA SILVA CORREIA NETO"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000021 : cti:Docente [
+		cti:nm_docente "MATHEUS DHEIN DILL"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000022 : cti:Docente [
+		cti:nm_docente "ALBANITA GOMES DA COSTA DE CEBALLOS"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000023 : cti:Docente [
+		cti:nm_docente "LUIZ FLAVIO ARREGUY MAIA FILHO"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000024 : cti:Docente [
+		cti:nm_docente "EMIDIO CANTIDIO ALMEIDA DE OLIVEIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000025 : cti:Docente [
+		cti:nm_docente "DANIEL FRIGUGLIETTI BRANDESPIM"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000026 : cti:Docente [
+		cti:nm_docente "CAROLINA NUNES LIBERAL"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000027 : cti:Docente [
+		cti:nm_docente "RAMON RAUDEL PENA GARCIA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000028 : cti:Docente [
+		cti:nm_docente "HELINANDO PEQUENO DE OLIVEIRA"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000029 : cti:Docente [
+		cti:nm_docente "ANA CLAUDIA VAZ DE ARAUJO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000030 : cti:Docente [
+		cti:nm_docente "MARCOS GOMES GHISLANDI"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000031 : cti:Docente [
+		cti:nm_docente "VALDEMIR ALEXANDRE DOS SANTOS"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000032 : cti:Docente [
+		cti:nm_docente "ANETE SOARES CAVALCANTI"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000033 : cti:Docente [
+		cti:nm_docente "JAQUELINE BIANQUE DE OLIVEIRA"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000034 : cti:Docente [
+		cti:nm_docente "IVONEIDE DE CARVALHO LOPES BARROS"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000035 : cti:Docente [
+		cti:nm_docente "RAFAEL ALVES DE OLIVEIRA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000036 : cti:Docente [
+		cti:nm_docente "ANGELA FERNANDES CAMPOS"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000037 : cti:Docente [
+		cti:nm_docente "GERALDO JORGE BARBOSA DE MOURA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000038 : cti:Docente [
+		cti:nm_docente "RUTH DO NASCIMENTO FIRME"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000039 : cti:Docente [
+		cti:nm_docente "ERIKA SURUAGY ASSIS DE FIGUEIREDO"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000040 : cti:Docente [
+		cti:nm_docente "AILTON REIS"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000041 : cti:Docente [
+		cti:nm_docente "ANTONIO JOSE FERREIRA GOMES JUNIOR"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000042 : cti:Docente [
+		cti:nm_docente "MANOEL ADRIAO GOMES FILHO"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000043 : cti:Docente [
+		cti:nm_docente "MOHAMMAD REZA DOUSTI"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000044 : cti:Docente [
+		cti:nm_docente "WELITON SOARES MARTINS"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000045 : cti:Docente [
+		cti:nm_docente "GALBA MARIA DE CAMPOS TAKAKI"
+		cti:an_titulacao 1984
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000046 : cti:Docente [
+		cti:nm_docente "MARCOS CESAR SANTOS ORIA"
+		cti:an_titulacao 1990
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000047 : cti:Docente [
+		cti:nm_docente "EDENIA MARIA RIBEIRO DO AMARAL"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000048 : cti:Docente [
+		cti:nm_docente "REGINALDO DE CARVALHO"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000049 : cti:Docente [
+		cti:nm_docente "JOAO RUFINO DE FREITAS FILHO"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000050 : cti:Docente [
+		cti:nm_docente "JACQUELINE SANTOS SILVA CAVALCANTI"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000051 : cti:Docente [
+		cti:nm_docente "JOAO ROBERTO RATIS TENORIO DA SILVA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000052 : cti:Docente [
+		cti:nm_docente "PAULA BRAGA GOMES DE PEREZ"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000053 : cti:Docente [
+		cti:nm_docente "MARIA DANIELLE ARAUJO MOTA"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000054 : cti:Docente [
+		cti:nm_docente "ANDRE DA SILVA XAVIER"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000055 : cti:Docente [
+		cti:nm_docente "THIAGO YUKIO TANAKA"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000056 : cti:Docente [
+		cti:nm_docente "KLEBER NAPOLEAO NUNES DE OLIVEIRA BARROS"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000057 : cti:Docente [
+		cti:nm_docente "MARIA TEREZA CARTAXO MUNIZ"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000058 : cti:Docente [
+		cti:nm_docente "MARTINE PATRICIA ARLETTE CHEVROLLIER"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000059 : cti:Docente [
+		cti:nm_docente "IRAN FERREIRA DE MELO"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000060 : cti:Docente [
+		cti:nm_docente "LARISSA ARAUJO ROLIM"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000061 : cti:Docente [
+		cti:nm_docente "BRENDA CARLOS DE ANDRADE"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000062 : cti:Docente [
+		cti:nm_docente "VERONICA TAVARES SANTOS BATINGA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000063 : cti:Docente [
+		cti:nm_docente "ELCIDA DE LIMA ARAUJO"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000064 : cti:Docente [
+		cti:nm_docente "JOSE NUNES DA SILVA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000065 : cti:Docente [
+		cti:nm_docente "LAETICIA MEDEIROS JALIL"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000066 : cti:Docente [
+		cti:nm_docente "CIBELE CARDOSO DE CASTRO"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000067 : cti:Docente [
+		cti:nm_docente "VALERIA SEVERINA GOMES"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000068 : cti:Docente [
+		cti:nm_docente "ANA LUCIA FIGUEIREDO PORTO"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000069 : cti:Docente [
+		cti:nm_docente "JOSE TEMISTOCLES FERREIRA JUNIOR"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000070 : cti:Docente [
+		cti:nm_docente "MARIA TERESA AURELIANO BURIL VITAL RODRIGUES"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000071 : cti:Docente [
+		cti:nm_docente "FLAVIA CHRISTIANE GUINHOS DE MENEZES BARRETO SILVA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000072 : cti:Docente [
+		cti:nm_docente "JOSE HOLANDA DA SILVA JUNIOR"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000073 : cti:Docente [
+		cti:nm_docente "MARCELA MOURA TORRES PAIM"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000074 : cti:Docente [
+		cti:nm_docente "JACKSON ROBERTO GUEDES DA SILVA ALMEIDA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000075 : cti:Docente [
+		cti:nm_docente "ANILDO MONTEIRO CALDAS"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000076 : cti:Docente [
+		cti:nm_docente "RENATA BARBOSA VICENTE"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000077 : cti:Docente [
+		cti:nm_docente "MOACYR CUNHA FILHO"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000078 : cti:Docente [
+		cti:nm_docente "NICOLA SCHIEL"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000079 : cti:Docente [
+		cti:nm_docente "ANA MARIA DUBEUX GERVAIS"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000080 : cti:Docente [
+		cti:nm_docente "GEVSON SILVA ANDRADE"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000081 : cti:Docente [
+		cti:nm_docente "MOACIR SANTOS TINOCO"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000082 : cti:Docente [
+		cti:nm_docente "VICENTINA MARIA RAMIRES BORBA"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000083 : cti:Docente [
+		cti:nm_docente "LEONIE ASFORA SARUBBO GAMA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000084 : cti:Docente [
+		cti:nm_docente "CLAUDIA ROBERTA TAVARES SILVA"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000085 : cti:Docente [
+		cti:nm_docente "FABIO MARIO DA SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000086 : cti:Docente [
+		cti:nm_docente "JOSE DILSON BESERRA CAVALCANTI"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000087 : cti:Docente [
+		cti:nm_docente "NATAN MESSIAS DE ALMEIDA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000088 : cti:Docente [
+		cti:nm_docente "ALBERT STEVENS REYNA OCAS"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000089 : cti:Docente [
+		cti:nm_docente "MARIA BETANIA DE QUEIROZ ROLIM"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000090 : cti:Docente [
+		cti:nm_docente "JOAO BATISTA PEREIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000091 : cti:Docente [
+		cti:nm_docente "CYNTHIA XAVIER DE CARVALHO"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000092 : cti:Docente [
+		cti:nm_docente "DENNYS DIKSON MARCELINO DA SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000093 : cti:Docente [
+		cti:nm_docente "JOAO MORAIS DE SOUSA"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000094 : cti:Docente [
+		cti:nm_docente "ANGELA VALERIA ALVES DE LIMA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000095 : cti:Docente [
+		cti:nm_docente "DAYSE AMANCIO DOS SANTOS VERAS FREITAS"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000096 : cti:Docente [
+		cti:nm_docente "IEDO DE OLIVEIRA PAES"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000097 : cti:Docente [
+		cti:nm_docente "MARIA HELENA TAVARES DE MATOS"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000098 : cti:Docente [
+		cti:nm_docente "IVANDA MARIA MARTINS SILVA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000099 : cti:Docente [
+		cti:nm_docente "MARIA DO SOCORRO DE LIMA OLIVEIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000100 : cti:Docente [
+		cti:nm_docente "JULIENE DA SILVA BARROS GOMES"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000101 : cti:Docente [
+		cti:nm_docente "AMANDA BRANDAO ARAUJO MORENO"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000102 : cti:Docente [
+		cti:nm_docente "LUIS CLAUDIO MONTEIRO DE MATTOS"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000103 : cti:Docente [
+		cti:nm_docente "JEFFERSON RODRIGUES MACIEL"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000104 : cti:Docente [
+		cti:nm_docente "JULIA FIGUEREDO BENZAQUEN"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000105 : cti:Docente [
+		cti:nm_docente "ANDREA LORENA BUTTO ZARZAR"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000106 : cti:Docente [
+		cti:nm_docente "MARIA CELIA PEREIRA LIMA HERNANDES"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000107 : cti:Docente [
+		cti:nm_docente "EDILMA PEREIRA OLIVEIRA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000108 : cti:Docente [
+		cti:nm_docente "EUDES DA SILVA SANTOS"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000109 : cti:Docente [
+		cti:nm_docente "GUILHERME PENHA DA SILVA JUNIOR"
+		cti:an_titulacao 2021
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000110 : cti:Docente [
+		cti:nm_docente "DOROTHY BEZERRA SILVA DE BRITO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000111 : cti:Docente [
+		cti:nm_docente "ROMERO MARCOS PEDROSA BRANDAO COSTA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000112 : cti:Docente [
+		cti:nm_docente "NATANAEL DUARTE DE AZEVEDO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000113 : cti:Docente [
+		cti:nm_docente "ALINE FONSECA DE OLIVEIRA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000114 : cti:Docente [
+		cti:nm_docente "RALPH SANTOS OLIVEIRA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "FARMÁCIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000115 : cti:Docente [
+		cti:nm_docente "MAUREN POMALIS COELHO DA SILVA"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000116 : cti:Docente [
+		cti:nm_docente "REGINA CELIA BRESSAN QUEIROZ DE FIGUEIREDO"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "FARMÁCIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000117 : cti:Docente [
+		cti:nm_docente "EDUARDO BARBUIO"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000118 : cti:Docente [
+		cti:nm_docente "JULIANA MOURA DE LUNA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000119 : cti:Docente [
+		cti:nm_docente "MAURICIO SARDA DE FARIA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000120 : cti:Docente [
+		cti:nm_docente "KARINE MATOS MAGALHAES"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000121 : cti:Docente [
+		cti:nm_docente "DANILO RICARDO BARBOSA DE ARAUJO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000122 : cti:Docente [
+		cti:nm_docente "PATRICIA LOPES BARROS DE ARAUJO"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "FARMÁCIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000123 : cti:Docente [
+		cti:nm_docente "FELIPE ALBERTO BARBOSA SIMAO FERREIRA"
+		cti:an_titulacao 2020
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000124 : cti:Docente [
+		cti:nm_docente "REINEL BELTRAN AGUEDO"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000125 : cti:Docente [
+		cti:nm_docente "RONALDO NASCIMENTO DE OLIVEIRA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "FARMÁCIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000126 : cti:Docente [
+		cti:nm_docente "OSWALDO HIDEO ANDO JUNIOR"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000127 : cti:Docente [
+		cti:nm_docente "ANIA LUSSON CERVANTES"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000128 : cti:Docente [
+		cti:nm_docente "ERB FERREIRA LINS"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000129 : cti:Docente [
+		cti:nm_docente "TANIA MARIA SARMENTO DA SILVA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "FARMÁCIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000130 : cti:Docente [
+		cti:nm_docente "ERMESON CARNEIRO DE ANDRADE"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000131 : cti:Docente [
+		cti:nm_docente "DENIS KEUTON ALVES"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000132 : cti:Docente [
+		cti:nm_docente "ROBSON SANTOS DE OLIVEIRA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000133 : cti:Docente [
+		cti:nm_docente "ELIAS MARQUES FERREIRA DE OLIVEIRA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000134 : cti:Docente [
+		cti:nm_docente "TATIANA SOUZA PORTO"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000135 : cti:Docente [
+		cti:nm_docente "MARIA GRAZIA CRIBARI CARDOSO"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000136 : cti:Docente [
+		cti:nm_docente "RAFAEL BEZERRA DE LIMA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000137 : cti:Docente [
+		cti:nm_docente "DARCILENE CLAUDIO GOMES"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000138 : cti:Docente [
+		cti:nm_docente "CARLOS EDUARDO ALBUQUERQUE FERNANDES"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000139 : cti:Docente [
+		cti:nm_docente "JOAO EVANGELISTA TUDE DE MELO NETO"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000140 : cti:Docente [
+		cti:nm_docente "GUSTAVO HENRIQUE DA SILVA LIMA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000141 : cti:Docente [
+		cti:nm_docente "TARCISIO AUGUSTO ALVES DA SILVA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000142 : cti:Docente [
+		cti:nm_docente "GIUSEPPA MARIA DANIEL SPENILLO"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000143 : cti:Docente [
+		cti:nm_docente "MARIA DO ROSARIO DE FATIMA ANDRADE LEITAO"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000144 : cti:Docente [
+		cti:nm_docente "MORGANA SOARES DA SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000145 : cti:Docente [
+		cti:nm_docente "ARISTEU PORTELA JUNIOR"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000146 : cti:Docente [
+		cti:nm_docente "JOELTON DUARTE DE SANTANA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000147 : cti:Docente [
+		cti:nm_docente "JOAO PAULO RAMOS AGRA MELLO"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000148 : cti:Docente [
+		cti:nm_docente "CELSO DE AMORIM CAMARA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "FARMÁCIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000149 : cti:Docente [
+		cti:nm_docente "MARCEL AYRES DE ARAUJO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ENGENHARIA ELÉTRICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000150 : cti:Docente [
+		cti:nm_docente "ANDERSON FERNANDES DE ALENCAR"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000151 : cti:Docente [
+		cti:nm_docente "ANGELO GIUSEPPE CHAVES ALVES"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000152 : cti:Docente [
+		cti:nm_docente "ANA CARLA ASFORA EL DEIR"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000153 : cti:Docente [
+		cti:nm_docente "MARIA RITA IVO DE MELO MACHADO"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000154 : cti:Docente [
+		cti:nm_docente "ANA CLAUDIA DE LIMA SILVA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000155 : cti:Docente [
+		cti:nm_docente "JULIAN PEREZ CASSARINO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000156 : cti:Docente [
+		cti:nm_docente "CLAUDIA ULISSES DE CARVALHO SILVA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000157 : cti:Docente [
+		cti:nm_docente "MARCOS ANTONIO BEZERRA FIGUEIREDO"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000158 : cti:Docente [
+		cti:nm_docente "OSCAR EMERSON ZUNIGA MOSQUERA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000159 : cti:Docente [
+		cti:nm_docente "MAURO DE MELO JUNIOR"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000160 : cti:Docente [
+		cti:nm_docente "FRANCINETE FRANCIS LACERDA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000161 : cti:Docente [
+		cti:nm_docente "WAGNER LINS LIRA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000162 : cti:Docente [
+		cti:nm_docente "MONICA LUCIA BOTTER CARVALHO"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000163 : cti:Docente [
+		cti:nm_docente "GABRIELLA MARIA LIMA BEZERRA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "SOCIOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000164 : cti:Docente [
+		cti:nm_docente "MONALIZA RIOS SILVA"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000165 : cti:Docente [
+		cti:nm_docente "MONICA LOPES FOLENA ARAUJO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000166 : cti:Docente [
+		cti:nm_docente "WALTER SANTOS EVANGELISTA JUNIOR"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000167 : cti:Docente [
+		cti:nm_docente "LUCIANO PIRES DE ANDRADE"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000168 : cti:Docente [
+		cti:nm_docente "ROGERIO DE AQUINO SARAIVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000169 : cti:Docente [
+		cti:nm_docente "JORGE LUIZ SCHIRMER DE MATTOS"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000170 : cti:Docente [
+		cti:nm_docente "EDER GALINARI FERREIRA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000171 : cti:Docente [
+		cti:nm_docente "ALAN CEZAR BEZERRA"
+		cti:an_titulacao 2020
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000172 : cti:Docente [
+		cti:nm_docente "BRUNO SILVA LEITE"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000173 : cti:Docente [
+		cti:nm_docente "JOSE IRANILDO MIRANDA DE MELO"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000174 : cti:Docente [
+		cti:nm_docente "CARMEN ROSELAINE DE OLIVEIRA FARIAS"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000175 : cti:Docente [
+		cti:nm_docente "MARIA MARLY DE OLIVEIRA"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000176 : cti:Docente [
+		cti:nm_docente "CARLA RENATA SILVA LEITAO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000177 : cti:Docente [
+		cti:nm_docente "MARIA NORMA RIBEIRO"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000178 : cti:Docente [
+		cti:nm_docente "MARCIA FELIX DA SILVA CORTEZ"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000179 : cti:Docente [
+		cti:nm_docente "MARTIN ALEJANDRO MONTES"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000180 : cti:Docente [
+		cti:nm_docente "FRANCISCO NAIRON MONTEIRO JUNIOR"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000181 : cti:Docente [
+		cti:nm_docente "ANTONIO ANDRE CUNHA CALLADO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000182 : cti:Docente [
+		cti:nm_docente "MARIA DE FATIMA GOMES DA CRUZ"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000183 : cti:Docente [
+		cti:nm_docente "MARCUS VINICIUS LOSS SPERANDIO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000184 : cti:Docente [
+		cti:nm_docente "SANDRA RODRIGUES DE SOUZA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000185 : cti:Docente [
+		cti:nm_docente "ANA PAULA ABRAHAMIAN DE SOUZA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000186 : cti:Docente [
+		cti:nm_docente "RAQUEL DE ARAGAO UCHOA FERNANDES"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000187 : cti:Docente [
+		cti:nm_docente "LUCAS DOS SANTOS FERNANDES"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000188 : cti:Docente [
+		cti:nm_docente "WATSON ARANTES GAMA JUNIOR"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000189 : cti:Docente [
+		cti:nm_docente "FLAVIA CRISTINA GOMES CATUNDA DE VASCONCELOS"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000190 : cti:Docente [
+		cti:nm_docente "HORASA MARIA LIMA DA SILVA ANDRADE"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000191 : cti:Docente [
+		cti:nm_docente "ARIADNE DO NASCIMENTO MOURA"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000192 : cti:Docente [
+		cti:nm_docente "MARCUS METRI CORREA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "INTERDISCIPLINAR"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000193 : cti:Docente [
+		cti:nm_docente "CRISTIANO DE ALMEIDA CARDOSO MARCELINO JUNIOR"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000194 : cti:Docente [
+		cti:nm_docente "FRANCISCO MARCANTE SANTANA DA SILVA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000195 : cti:Docente [
+		cti:nm_docente "LUCIANO DE AZEVEDO SOARES NETO"
+		cti:an_titulacao 1996
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000196 : cti:Docente [
+		cti:nm_docente "EDUARDO SOARES DE SOUZA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000197 : cti:Docente [
+		cti:nm_docente "CARLOS DANIEL PEREZ"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000198 : cti:Docente [
+		cti:nm_docente "KATIA CRISTINA SILVA DE FREITAS"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000199 : cti:Docente [
+		cti:nm_docente "JOACY VICENTE FERREIRA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000200 : cti:Docente [
+		cti:nm_docente "VICENTE DE PAULO SILVA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000201 : cti:Docente [
+		cti:nm_docente "ANTONIO INACIO DINIZ JUNIOR"
+		cti:an_titulacao 2022
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000202 : cti:Docente [
+		cti:nm_docente "CARMEN SILVIA ZICKEL"
+		cti:an_titulacao 1995
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000203 : cti:Docente [
+		cti:nm_docente "RODRIGO GENUINO CLEMENTE"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000204 : cti:Docente [
+		cti:nm_docente "ALFREDO OLIVERA GALVEZ"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000205 : cti:Docente [
+		cti:nm_docente "ANA MARIA DOS ANJOS CARNEIRO LEAO"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000206 : cti:Docente [
+		cti:nm_docente "SARAH MARIA ATHIE DE SOUZA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000207 : cti:Docente [
+		cti:nm_docente "GILVANEIDE FERREIRA DE OLIVEIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000208 : cti:Docente [
+		cti:nm_docente "RODRIGO JOSE GONDIM NEVES"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000209 : cti:Docente [
+		cti:nm_docente "SEVERINO BARROS DE MELO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000210 : cti:Docente [
+		cti:nm_docente "ALEXANDRE REIS MACHADO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000211 : cti:Docente [
+		cti:nm_docente "RICARDO NUNES MACHADO JUNIOR"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000212 : cti:Docente [
+		cti:nm_docente "ADRIANO REGIS MELO RODRIGUES DA SILVA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000213 : cti:Docente [
+		cti:nm_docente "ANDRE ANGELO MEDEIROS GOMES"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000214 : cti:Docente [
+		cti:nm_docente "ROSS ALVES DO NASCIMENTO"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000215 : cti:Docente [
+		cti:nm_docente "LUCIANO NICOLAS NAKA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000216 : cti:Docente [
+		cti:nm_docente "EUDES MENDES BARBOZA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000217 : cti:Docente [
+		cti:nm_docente "THIAGO DIAS OLIVEIRA SILVA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000218 : cti:Docente [
+		cti:nm_docente "LEONARDO SILVA BOITEUX"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000219 : cti:Docente [
+		cti:nm_docente "THIAGO GONCALVES SOUZA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000220 : cti:Docente [
+		cti:nm_docente "MARIA ANGELA VASCONCELOS DE ALMEIDA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000221 : cti:Docente [
+		cti:nm_docente "RALF TARCISO SILVA CORDEIRO"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000222 : cti:Docente [
+		cti:nm_docente "MARIA JOSE DE FILGUEIRAS GOMES"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000223 : cti:Docente [
+		cti:nm_docente "KARLA FERREIRA DE ARRUDA DUQUE"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000224 : cti:Docente [
+		cti:nm_docente "JORGE ANTONIO HINOJOSA VERA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000225 : cti:Docente [
+		cti:nm_docente "SAMI JORGE MICHEREFF"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000226 : cti:Docente [
+		cti:nm_docente "LEONARDO DA SILVA CHAVES"
+		cti:an_titulacao 2020
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000227 : cti:Docente [
+		cti:nm_docente "ELISANGELA BASTOS DE MELO ESPINDOLA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000228 : cti:Docente [
+		cti:nm_docente "JONAS ALBERTO RIOS"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000229 : cti:Docente [
+		cti:nm_docente "RACHEL COSTA DE AZEVEDO MELLO"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000230 : cti:Docente [
+		cti:nm_docente "KELLYTON DOS SANTOS BRITO"
+		cti:an_titulacao 2021
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000231 : cti:Docente [
+		cti:nm_docente "RICARDO BEZERRA TORRES LIMA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000232 : cti:Docente [
+		cti:nm_docente "ELVIRA MARIA REGIS PEDROSA"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000233 : cti:Docente [
+		cti:nm_docente "LAURECY DIAS DOS SANTOS"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000234 : cti:Docente [
+		cti:nm_docente "MARIA HELENA CAMARA LIRA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000235 : cti:Docente [
+		cti:nm_docente "CICERO GARROZI"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000236 : cti:Docente [
+		cti:nm_docente "TARCIANA MARIA SANTOS DA SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000237 : cti:Docente [
+		cti:nm_docente "FLAVIA LUCENA FREDOU"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000238 : cti:Docente [
+		cti:nm_docente "JOSE DEIBSOM DA SILVA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000239 : cti:Docente [
+		cti:nm_docente "ANA PAULA TEIXEIRA BRUNO SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000240 : cti:Docente [
+		cti:nm_docente "YGOR JACQUES AGRA BEZERRA DA SILVA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000241 : cti:Docente [
+		cti:nm_docente "MICHAEL LEE SUNDHEIMER"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000242 : cti:Docente [
+		cti:nm_docente "CARLOS ANDRE DE CARVALHO BOSCO"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000243 : cti:Docente [
+		cti:nm_docente "GUSTAVO RAU DE ALMEIDA CALLOU"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000244 : cti:Docente [
+		cti:nm_docente "ANTONIO CARLOS DA SILVA MIRANDA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000245 : cti:Docente [
+		cti:nm_docente "EDIVAN RODRIGUES DE SOUZA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000246 : cti:Docente [
+		cti:nm_docente "ANTONIO DE PADUA SANTOS"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000247 : cti:Docente [
+		cti:nm_docente "SILVANA BOCANEGRA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000248 : cti:Docente [
+		cti:nm_docente "ENERY GISLAYNE DE SOUSA MELO"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000249 : cti:Docente [
+		cti:nm_docente "CAROLINE MIRANDA BIONDI"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000250 : cti:Docente [
+		cti:nm_docente "JAIRO RICARDO ROCHA DE OLIVEIRA"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000251 : cti:Docente [
+		cti:nm_docente "GABRIEL ALVES DE ALBUQUERQUE JUNIOR"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000252 : cti:Docente [
+		cti:nm_docente "GABRIEL ARAUJO GUEDES"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000253 : cti:Docente [
+		cti:nm_docente "BARBARA COSTA DA SILVA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000254 : cti:Docente [
+		cti:nm_docente "DELSON LARANJEIRA"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000255 : cti:Docente [
+		cti:nm_docente "MARCO AURELIO BENEVIDES DE PINHO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000256 : cti:Docente [
+		cti:nm_docente "THIERES GEORGE FREIRE DA SILVA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000257 : cti:Docente [
+		cti:nm_docente "IONETE CAVALCANTI DE MORAES"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000258 : cti:Docente [
+		cti:nm_docente "ERIKA VALENTE DE MEDEIROS"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000259 : cti:Docente [
+		cti:nm_docente "ALESSANDRA CARLA CEOLIN"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000260 : cti:Docente [
+		cti:nm_docente "JEAN CHEYSON BARROS DOS SANTOS"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000261 : cti:Docente [
+		cti:nm_docente "ANDRE GUSTAVO CARVALHO MACHADO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000262 : cti:Docente [
+		cti:nm_docente "JOSE GERALDO EUGENIO DE FRANCA"
+		cti:an_titulacao 1990
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000263 : cti:Docente [
+		cti:nm_docente "YUMARA LUCIA VASCONCELOS"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000264 : cti:Docente [
+		cti:nm_docente "MARIA BETANIA GALVAO DOS SANTOS FREIRE"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000265 : cti:Docente [
+		cti:nm_docente "MARIA IRAE DE SOUZA CORREA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000266 : cti:Docente [
+		cti:nm_docente "CAROLINA ETIENNE DE ROSALIA E SILVA SANTOS"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000267 : cti:Docente [
+		cti:nm_docente "BRIVALDO GOMES DE ALMEIDA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000268 : cti:Docente [
+		cti:nm_docente "ANDREA CARLA DE PAIVA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000269 : cti:Docente [
+		cti:nm_docente "MARCO AURELIO SIQUEIRA DA GAMA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000270 : cti:Docente [
+		cti:nm_docente "SARA CRISTINA PINTO RODRIGUES"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000271 : cti:Docente [
+		cti:nm_docente "ANA DOLORES SANTIAGO DE FREITAS"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000272 : cti:Docente [
+		cti:nm_docente "PIERRE CASTRO SOARES"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000273 : cti:Docente [
+		cti:nm_docente "SUZANA CANDIDO DE BARROS SAMPAIO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000274 : cti:Docente [
+		cti:nm_docente "MARIA GILCA PINTO XAVIER"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000275 : cti:Docente [
+		cti:nm_docente "CARLA LOPES DE MENDONCA"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000276 : cti:Docente [
+		cti:nm_docente "LETICIA DA COSTA E SILVA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000277 : cti:Docente [
+		cti:nm_docente "JOSE AUGUSTO BASTOS AFONSO DA SILVA"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000278 : cti:Docente [
+		cti:nm_docente "TIAGO ARAUJO DE PAULA LIMA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000279 : cti:Docente [
+		cti:nm_docente "ELLEN CORDEIRO BENTO DA SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000280 : cti:Docente [
+		cti:nm_docente "GRAZIELLE ANAHY DE SOUSA ALEIXO CAVALCANTI"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000281 : cti:Docente [
+		cti:nm_docente "TALES WANDERLEY VITAL"
+		cti:an_titulacao 1991
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000282 : cti:Docente [
+		cti:nm_docente "ADAUTO JOSE FERREIRA DE SOUZA"
+		cti:an_titulacao 1993
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000283 : cti:Docente [
+		cti:nm_docente "FELIPE LUIZ LIMA DE PAULO"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000284 : cti:Docente [
+		cti:nm_docente "MATEUS ROSAS RIBEIRO FILHO"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000285 : cti:Docente [
+		cti:nm_docente "DIEGO JOSE RATIVA MILLAN"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000286 : cti:Docente [
+		cti:nm_docente "LEUCIO CAMARA ALVES"
+		cti:an_titulacao 1991
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000287 : cti:Docente [
+		cti:nm_docente "HELIO CORDEIRO MANSO FILHO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000288 : cti:Docente [
+		cti:nm_docente "MARCOS ANTONIO LEMOS DE OLIVEIRA"
+		cti:an_titulacao 1982
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000289 : cti:Docente [
+		cti:nm_docente "DIEGO FIRMINO COSTA DA SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000290 : cti:Docente [
+		cti:nm_docente "FABRICIO BEZERRA DE SA"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000291 : cti:Docente [
+		cti:nm_docente "JOSE FERRAZ DE MOURA NUNES FILHO"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000292 : cti:Docente [
+		cti:nm_docente "ANDREA ALICE DA FONSECA OLIVEIRA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000293 : cti:Docente [
+		cti:nm_docente "ANDRE MARIANO BATISTA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000294 : cti:Docente [
+		cti:nm_docente "FABIANO SELLOS COSTA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000295 : cti:Docente [
+		cti:nm_docente "ANA LICIA PATRIOTA FELICIANO MARANGON"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000296 : cti:Docente [
+		cti:nm_docente "JOSE WILTON PINHEIRO JUNIOR"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000297 : cti:Docente [
+		cti:nm_docente "CLAUDIO COUTINHO BARTOLOMEU"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000298 : cti:Docente [
+		cti:nm_docente "GISELLE GOMES MONTEIRO FRACETTO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000299 : cti:Docente [
+		cti:nm_docente "MARIO DE ANDRADE LIRA JUNIOR"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000300 : cti:Docente [
+		cti:nm_docente "ADEMIR DE OLIVEIRA FERREIRA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000301 : cti:Docente [
+		cti:nm_docente "MARIA DA PENHA MOREIRA GONCALVES"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000302 : cti:Docente [
+		cti:nm_docente "EVILDA RODRIGUES DE LIMA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000303 : cti:Docente [
+		cti:nm_docente "JOSE ANTONIO ALEIXO DA SILVA"
+		cti:an_titulacao 1986
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000304 : cti:Docente [
+		cti:nm_docente "KEILA APARECIDA MOREIRA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000305 : cti:Docente [
+		cti:nm_docente "HUBER RIZZO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000306 : cti:Docente [
+		cti:nm_docente "GILCIA APARECIDA DE CARVALHO"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000307 : cti:Docente [
+		cti:nm_docente "RINALDO APARECIDO MOTA"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000308 : cti:Docente [
+		cti:nm_docente "EMANUEL ARAUJO SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000309 : cti:Docente [
+		cti:nm_docente "FRANCISCO DE ASSIS LEITE SOUZA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000310 : cti:Docente [
+		cti:nm_docente "EDNEY PEREIRA DA SILVA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000311 : cti:Docente [
+		cti:nm_docente "RODRIGO EIJI HAKAMADA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000312 : cti:Docente [
+		cti:nm_docente "FRANCISCO FERNANDO RAMOS DE CARVALHO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000313 : cti:Docente [
+		cti:nm_docente "JEAN CARLOS RAMOS DA SILVA"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000314 : cti:Docente [
+		cti:nm_docente "TELMA LUCIA DE ANDRADE LIMA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000315 : cti:Docente [
+		cti:nm_docente "FABIO DE SOUZA MENDONCA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000316 : cti:Docente [
+		cti:nm_docente "VALDSON JOSE DA SILVA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000317 : cti:Docente [
+		cti:nm_docente "CAMILLA MENDONCA SILVA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000318 : cti:Docente [
+		cti:nm_docente "ZELIA MARIA SOARES JOFILI"
+		cti:an_titulacao 1996
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000319 : cti:Docente [
+		cti:nm_docente "MARIA INES SUCUPIRA MACIEL"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000320 : cti:Docente [
+		cti:nm_docente "EVARISTO JORGE OLIVEIRA DE SOUZA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000321 : cti:Docente [
+		cti:nm_docente "JOAO PAULO ISMERIO DOS SANTOS MONNERAT"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000322 : cti:Docente [
+		cti:nm_docente "HELENA EMILIA CAVALCANTI DA COSTA CORDEIRO MANSO"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000323 : cti:Docente [
+		cti:nm_docente "BETANIA CRISTINA GUILHERME"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000324 : cti:Docente [
+		cti:nm_docente "RENATA VALERIANO TONON"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000325 : cti:Docente [
+		cti:nm_docente "MARCELO DE ANDRADE FERREIRA"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000326 : cti:Docente [
+		cti:nm_docente "JOAQUIM EVENCIO NETO"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000327 : cti:Docente [
+		cti:nm_docente "RENATA PIMENTEL BANDEIRA DE MELO"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000328 : cti:Docente [
+		cti:nm_docente "RINALDO LUIZ CARACIOLO FERREIRA"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000329 : cti:Docente [
+		cti:nm_docente "MERCIA VIRGINIA FERREIRA DOS SANTOS"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000330 : cti:Docente [
+		cti:nm_docente "CARLOS BOA VIAGEM RABELLO"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000331 : cti:Docente [
+		cti:nm_docente "WAGNER EDUARDO DA SILVA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000332 : cti:Docente [
+		cti:nm_docente "LAURA LEANDRO DA ROCHA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000333 : cti:Docente [
+		cti:nm_docente "MARCIO VIEIRA DA CUNHA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000334 : cti:Docente [
+		cti:nm_docente "MARIA APARECIDA TENORIO SALVADOR DA COSTA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000335 : cti:Docente [
+		cti:nm_docente "CRISTIANO COSTA BASTOS"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000336 : cti:Docente [
+		cti:nm_docente "ALEXANDRE CARNEIRO LEAO DE MELLO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000337 : cti:Docente [
+		cti:nm_docente "WILSON ROSA DE OLIVEIRA JUNIOR"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000338 : cti:Docente [
+		cti:nm_docente "TATIJANA STOSIC"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000339 : cti:Docente [
+		cti:nm_docente "ANNA PAULA DE A BRITO LIMA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000340 : cti:Docente [
+		cti:nm_docente "JOAO EDUARDO FERNANDES RAMOS"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000341 : cti:Docente [
+		cti:nm_docente "MARIA DO CARMO MOHAUPT MARQUES LUDKE"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000342 : cti:Docente [
+		cti:nm_docente "JOSE CARLOS BATISTA DUBEUX JUNIOR"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000343 : cti:Docente [
+		cti:nm_docente "FRANK SINATRA GOMES DA SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000344 : cti:Docente [
+		cti:nm_docente "MARCILIO MARTINS DE MORAES"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000345 : cti:Docente [
+		cti:nm_docente "JOSIMAR MENDES DE VASCONCELOS"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000346 : cti:Docente [
+		cti:nm_docente "JADER DA SILVA JALE"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000347 : cti:Docente [
+		cti:nm_docente "BRUNO SEVERO GOMES"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000348 : cti:Docente [
+		cti:nm_docente "JANAINA GUIMARAES DA FONSECA E SILVA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000349 : cti:Docente [
+		cti:nm_docente "LUCIAN BOGDAN BEJAN"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000350 : cti:Docente [
+		cti:nm_docente "UIRAN GEBARA DA SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000351 : cti:Docente [
+		cti:nm_docente "ANTONIO SAMUEL ALVES DA SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000352 : cti:Docente [
+		cti:nm_docente "LILIAN FRANCISCO ARANTES DE SOUZA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000353 : cti:Docente [
+		cti:nm_docente "SUELY ALVES DA SILVA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000354 : cti:Docente [
+		cti:nm_docente "LUIZ ANTONIO MARTINELLI"
+		cti:an_titulacao 1989
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000355 : cti:Docente [
+		cti:nm_docente "PAULO EURICO PIRES FERREIRA TRAVASSOS"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000356 : cti:Docente [
+		cti:nm_docente "GIAN CARLO DE MELO SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000357 : cti:Docente [
+		cti:nm_docente "CLAUDIO TADEU CRISTINO"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000358 : cti:Docente [
+		cti:nm_docente "WILLIAM SEVERI"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000359 : cti:Docente [
+		cti:nm_docente "GUILHERME ROCHA MOREIRA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000360 : cti:Docente [
+		cti:nm_docente "WELLINGTON BARBOSA DA SILVA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000361 : cti:Docente [
+		cti:nm_docente "GUSTAVO ACIOLI LOPES"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000362 : cti:Docente [
+		cti:nm_docente "ROMULO SIMOES CEZAR MENEZES"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000363 : cti:Docente [
+		cti:nm_docente "RAFAEL FERREIRA LEITE DE MELLO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000364 : cti:Docente [
+		cti:nm_docente "ROSANGELA PAULA TEIXEIRA LESSA"
+		cti:an_titulacao 1989
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000365 : cti:Docente [
+		cti:nm_docente "RANILSON DE SOUZA BEZERRA"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000366 : cti:Docente [
+		cti:nm_docente "PAULO JOSE DUARTE NETO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000367 : cti:Docente [
+		cti:nm_docente "THIERRY FREDOU"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000368 : cti:Docente [
+		cti:nm_docente "TIAGO ALESSANDRO ESPINOLA FERREIRA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000369 : cti:Docente [
+		cti:nm_docente "JULIANA FERREIRA DOS SANTOS"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000370 : cti:Docente [
+		cti:nm_docente "RENATA AKEMI SHINOZAKI MENDES"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000371 : cti:Docente [
+		cti:nm_docente "HUMBER AGRELLI DE ANDRADE"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000372 : cti:Docente [
+		cti:nm_docente "CERES DUARTE GUEDES CABRAL DE ALMEIDA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000373 : cti:Docente [
+		cti:nm_docente "PAULO ROBERTO CAMPAGNOLI DE OLIVEIRA FILHO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000374 : cti:Docente [
+		cti:nm_docente "SUZIANNY MARIA BEZERRA CABRAL DA SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000375 : cti:Docente [
+		cti:nm_docente "LUIS OTAVIO BRITO DA SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000376 : cti:Docente [
+		cti:nm_docente "PAULO GUILHERME VASCONCELOS DE OLIVEIRA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000377 : cti:Docente [
+		cti:nm_docente "HELAINE SIVINI FERREIRA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000378 : cti:Docente [
+		cti:nm_docente "VIVIANE MORAES DE OLIVEIRA"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000379 : cti:Docente [
+		cti:nm_docente "BORKO STOSIC"
+		cti:an_titulacao 1991
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000380 : cti:Docente [
+		cti:nm_docente "JOSE RAMON BARROS CANTALICE"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000381 : cti:Docente [
+		cti:nm_docente "ABELARDO ANTONIO DE ASSUNCAO MONTENEGRO"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000382 : cti:Docente [
+		cti:nm_docente "CLAUDIO AUGUSTO GOMES DA CAMARA"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000383 : cti:Docente [
+		cti:nm_docente "THIAGO ARAUJO DA SILVEIRA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000384 : cti:Docente [
+		cti:nm_docente "JANAINA DE ALBUQUERQUE COUTO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000385 : cti:Docente [
+		cti:nm_docente "IVONEIDE MENDES DA SILVA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000386 : cti:Docente [
+		cti:nm_docente "MARCELO BRITO CARNEIRO LEAO"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000387 : cti:Docente [
+		cti:nm_docente "VLADIMIR LIRA VERAS XAVIER DE ANDRADE"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000388 : cti:Docente [
+		cti:nm_docente "ARNAUD PIERRE ALEXIS BERTRAND"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000389 : cti:Docente [
+		cti:nm_docente "SILVIO RICARDO MAURANO PEIXOTO"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000390 : cti:Docente [
+		cti:nm_docente "MARIA RAQUEL MOURA COIMBRA"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000391 : cti:Docente [
+		cti:nm_docente "MARIA JESUS NOGUEIRA RODAL"
+		cti:an_titulacao 1992
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000392 : cti:Docente [
+		cti:nm_docente "RUTE BERGER"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000393 : cti:Docente [
+		cti:nm_docente "VIVIAN LOGES"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000394 : cti:Docente [
+		cti:nm_docente "MARCONE MOREIRA SANTOS"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000395 : cti:Docente [
+		cti:nm_docente "ANGELICA VIRGINIA VALOIS MONTARROYOS"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000396 : cti:Docente [
+		cti:nm_docente "EVERALDO MARQUES DE LIMA NETO"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000397 : cti:Docente [
+		cti:nm_docente "FERNANDO JOSE FREIRE"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000398 : cti:Docente [
+		cti:nm_docente "RICARDO GALLO"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000399 : cti:Docente [
+		cti:nm_docente "RAFAEL LEITE BRAZ"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000400 : cti:Docente [
+		cti:nm_docente "FREDERICO INACIO COSTA DE OLIVEIRA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000401 : cti:Docente [
+		cti:nm_docente "ELIANE CRISTINA SAMPAIO DE FREITAS"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000402 : cti:Docente [
+		cti:nm_docente "ANA REGINA BEZERRA RIBEIRO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000403 : cti:Docente [
+		cti:nm_docente "ROBERTA BORDA SOARES"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000404 : cti:Docente [
+		cti:nm_docente "JADILSON RAMOS DE ALMEIDA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000405 : cti:Docente [
+		cti:nm_docente "MARCELO LUIZ MONTEIRO MARINHO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000406 : cti:Docente [
+		cti:nm_docente "MARCIO SAMPAIO PIMENTEL"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000407 : cti:Docente [
+		cti:nm_docente "LEONARDO FERRAZ XAVIER"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000408 : cti:Docente [
+		cti:nm_docente "BRIGITTE RENATA BEZERRA DE OLIVEIRA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000409 : cti:Docente [
+		cti:nm_docente "ANDRE DE SOUZA MELO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000410 : cti:Docente [
+		cti:nm_docente "JOSE JAIME VASCONCELOS CAVALCANTI"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000411 : cti:Docente [
+		cti:nm_docente "ALVARO CARLOS GONCALVES NETO"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000412 : cti:Docente [
+		cti:nm_docente "EDSON FERREIRA DA SILVA"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000413 : cti:Docente [
+		cti:nm_docente "LUIZA SUELY SEMEN MARTINS"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000414 : cti:Docente [
+		cti:nm_docente "GHEYSA COELHO SILVA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000415 : cti:Docente [
+		cti:nm_docente "RODRIGO LINS RODRIGUES"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000416 : cti:Docente [
+		cti:nm_docente "RICARDO FERREIRA DAS NEVES"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000417 : cti:Docente [
+		cti:nm_docente "JOSE EUZEBIO SIMOES NETO"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000418 : cti:Docente [
+		cti:nm_docente "ROSEANE CAVALCANTI DOS SANTOS"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000419 : cti:Docente [
+		cti:nm_docente "JOSE LUIZ SANDES DE CARVALHO FILHO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000420 : cti:Docente [
+		cti:nm_docente "ELTON LUCIO DE ARAUJO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000421 : cti:Docente [
+		cti:nm_docente "JORGE BRAZ TORRES"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000422 : cti:Docente [
+		cti:nm_docente "DANIELE REGINA PARIZOTTO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000423 : cti:Docente [
+		cti:nm_docente "PAULO FELLIPE CRISTALDO"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000424 : cti:Docente [
+		cti:nm_docente "MARCELO HENRIQUE SANTOS PAIVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000425 : cti:Docente [
+		cti:nm_docente "MANOEL GUEDES CORREA GONDIM JUNIOR"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000426 : cti:Docente [
+		cti:nm_docente "JOSE DIJAIR ANTONINO DE SOUZA JUNIOR"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000427 : cti:Docente [
+		cti:nm_docente "PASCHOAL COELHO GROSSI"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000428 : cti:Docente [
+		cti:nm_docente "VALERIA WANDERLEY TEIXEIRA"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000429 : cti:Docente [
+		cti:nm_docente "CHRISTIAN SHERLEY ARAUJO DA SILVA TORRES"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000430 : cti:Docente [
+		cti:nm_docente "GISLEIA BENINI DUARTE"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000431 : cti:Docente [
+		cti:nm_docente "MARCOS FELIPE FALCAO SOBRAL"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000432 : cti:Docente [
+		cti:nm_docente "RODOLFO ARAUJO DE MORAES FILHO"
+		cti:an_titulacao 1981
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000433 : cti:Docente [
+		cti:nm_docente "PABRICIO MARCOS OLIVEIRA LOPES"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000434 : cti:Docente [
+		cti:nm_docente "SUZANA MARIA GICO LIMA MONTENEGRO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000435 : cti:Docente [
+		cti:nm_docente "GERONIMO FERREIRA DA SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000436 : cti:Docente [
+		cti:nm_docente "MANASSES MESQUITA DA SILVA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000437 : cti:Docente [
+		cti:nm_docente "JOSE AMILTON SANTOS JUNIOR"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000438 : cti:Docente [
+		cti:nm_docente "GLEDSON LUIZ PONTES DE ALMEIDA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000439 : cti:Docente [
+		cti:nm_docente "MARIO MONTEIRO ROLIM"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000440 : cti:Docente [
+		cti:nm_docente "ENIO FARIAS DE FRANCA E SILVA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000441 : cti:Docente [
+		cti:nm_docente "GEBER BARBOSA DE ALBUQUERQUE MOURA"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000442 : cti:Docente [
+		cti:nm_docente "BRUNO MELO DE ARAUJO"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000443 : cti:Docente [
+		cti:nm_docente "MARIANA ZERBONE ALVES DE ALBUQUERQUE"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000444 : cti:Docente [
+		cti:nm_docente "REJANE RODRIGUES DA COSTA E CARVALHO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000445 : cti:Docente [
+		cti:nm_docente "ANTONIO FELIX DA COSTA"
+		cti:an_titulacao 1995
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000446 : cti:Docente [
+		cti:nm_docente "ANTONIO FRANCISCO DE MENDONCA JUNIOR"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000447 : cti:Docente [
+		cti:nm_docente "SUELY CREUSA CORDEIRO DE ALMEIDA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000448 : cti:Docente [
+		cti:nm_docente "EDSON HELY SILVA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000449 : cti:Docente [
+		cti:nm_docente "RICARDO DE AGUIAR PACHECO"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000450 : cti:Docente [
+		cti:nm_docente "TIAGO DA SILVA CESAR"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000451 : cti:Docente [
+		cti:nm_docente "VICTOR HUGO ABRIL"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000452 : cti:Docente [
+		cti:nm_docente "JULIANA ALVES DE ANDRADE"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000453 : cti:Docente [
+		cti:nm_docente "BRUNO ROMERO FERREIRA MIRANDA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000454 : cti:Docente [
+		cti:nm_docente "CARLOS ANDRE SILVA DE MOURA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000455 : cti:Docente [
+		cti:nm_docente "AUGUSTO CESAR ACIOLY PAZ SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000456 : cti:Docente [
+		cti:nm_docente "CAROLINE BORGES"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000457 : cti:Docente [
+		cti:nm_docente "JEANNIE DA SILVA MENEZES"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000458 : cti:Docente [
+		cti:nm_docente "MARIA EMILIA VASCONCELOS DOS SANTOS"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000459 : cti:Docente [
+		cti:nm_docente "MARIANA ALBUQUERQUE DANTAS"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000460 : cti:Docente [
+		cti:nm_docente "HERBERT ALVARO ABREU DE SIQUEIRA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000461 : cti:Docente [
+		cti:nm_docente "CRISTIANE GUISELINI PANDORFI"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000462 : cti:Docente [
+		cti:nm_docente "HELITON PANDORFI"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000463 : cti:Docente [
+		cti:nm_docente "GISELDA BRITO SILVA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000464 : cti:Docente [
+		cti:nm_docente "HUMBERTO DA SILVA MIRANDA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000465 : cti:Docente [
+		cti:nm_docente "JOSE MARCELO MARQUES FERREIRA FILHO"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000466 : cti:Docente [
+		cti:nm_docente "ANNA CAROLINA SOARES ALMEIDA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000467 : cti:Docente [
+		cti:nm_docente "CLECIO SOUSA RAMOS"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000468 : cti:Docente [
+		cti:nm_docente "RAMOM RACHIDE NUNES"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000469 : cti:Docente [
+		cti:nm_docente "ANDRE FERNANDO LAVORANTE"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000470 : cti:Docente [
+		cti:nm_docente "FAUSTHON FRED DA SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000471 : cti:Docente [
+		cti:nm_docente "JULIANA ANGEIRAS BATISTA DA SILVA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000472 : cti:Docente [
+		cti:nm_docente "SEVERINO CARLOS BEZERRA DE OLIVEIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000473 : cti:Docente [
+		cti:nm_docente "JULIANO CARLO RUFINO DE FREITAS"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000474 : cti:Docente [
+		cti:nm_docente "JOSE MARIA GOMES DE SOUZA NETO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000475 : cti:Docente [
+		cti:nm_docente "KLEBER CLEMENTINO DA SILVA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000476 : cti:Docente [
+		cti:nm_docente "EMANUELA SOUSA RIBEIRO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000477 : cti:Docente [
+		cti:nm_docente "JANDYSON MACHADO SANTOS"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000478 : cti:Docente [
+		cti:nm_docente "RODRIGO BARBOSA ACIOLI DE OLIVEIRA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000479 : cti:Docente [
+		cti:nm_docente "SUZANA PEDROZA DA SILVA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000480 : cti:Docente [
+		cti:nm_docente "DANIEL PERRONE MOREIRA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000481 : cti:Docente [
+		cti:nm_docente "ELIZABETH SAMPAIO DE MEDEIROS"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000482 : cti:Docente [
+		cti:nm_docente "NEIDE KAZUE SAKUGAWA SHINOHARA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000483 : cti:Docente [
+		cti:nm_docente "ANA CAROLINA DOS SANTOS COSTA"
+		cti:an_titulacao 2020
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000484 : cti:Docente [
+		cti:nm_docente "LUCIANA LEITE DE ANDRADE LIMA ARRUDA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000485 : cti:Docente [
+		cti:nm_docente "ALEXANDRE GUEDES TORRES"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000486 : cti:Docente [
+		cti:nm_docente "EMMANUELA PRADO DE PAIVA AZEVEDO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000487 : cti:Docente [
+		cti:nm_docente "CAIO MONTEIRO VERISSIMO"
+		cti:an_titulacao 2020
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000488 : cti:Docente [
+		cti:nm_docente "ALCILEIDE CABRAL DO NASCIMENTO"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000489 : cti:Docente [
+		cti:nm_docente "ANA LUCIA DO NASCIMENTO OLIVEIRA"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000490 : cti:Docente [
+		cti:nm_docente "BRUNO MARTINS BOTO LEITE"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000491 : cti:Docente [
+		cti:nm_docente "ALVARO AGUIAR COELHO TEIXEIRA"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000492 : cti:Docente [
+		cti:nm_docente "GUSTAVO FERRER CARNEIRO"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000493 : cti:Docente [
+		cti:nm_docente "EMMANUEL VIANA PONTUAL"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000494 : cti:Docente [
+		cti:nm_docente "PABYTON GONCALVES CADENA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000495 : cti:Docente [
+		cti:nm_docente "BEATE SAEGESSER SANTOS"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000496 : cti:Docente [
+		cti:nm_docente "MONICA FREIRE BELIAN"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000497 : cti:Docente [
+		cti:nm_docente "PAULO ROBERTO ELEUTERIO DE SOUZA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000498 : cti:Docente [
+		cti:nm_docente "VALDEMIRO AMARO DA SILVA JUNIOR"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000499 : cti:Docente [
+		cti:nm_docente "ANISIO FRANCISCO SOARES"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000500 : cti:Docente [
+		cti:nm_docente "MARIA MADALENA PESSOA GUERRA"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000501 : cti:Docente [
+		cti:nm_docente "MARIA TACIANA CAVALCANTI VIEIRA SOARES"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000502 : cti:Docente [
+		cti:nm_docente "RAQUEL PEDROSA BEZERRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000503 : cti:Docente [
+		cti:nm_docente "ANTONIO RODRIGUES DE CASTRO ROMAGUERA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000504 : cti:Docente [
+		cti:nm_docente "ANDERSON LUIZ DA ROCHA E BARBOSA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000505 : cti:Docente [
+		cti:nm_docente "MARCOS GEORGE MAGALHAES MORENO FILHO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000506 : cti:Docente [
+		cti:nm_docente "SAMARA ALVACHIAN CARDOSO ANDRADE"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000507 : cti:Docente [
+		cti:nm_docente "ROMILDO DE ALBUQUERQUE NOGUEIRA"
+		cti:an_titulacao 1986
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000508 : cti:Docente [
+		cti:nm_docente "GILVANIA LUCIA DA SILVA VILELA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000509 : cti:Docente [
+		cti:nm_docente "JULIANA REGUEIRA BASTO DINIZ"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000510 : cti:Docente [
+		cti:nm_docente "MARCIA KARINA DA SILVA LUIZ"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000511 : cti:Docente [
+		cti:nm_docente "TACIANA PONTUAL DA ROCHA FALCAO"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000512 : cti:Docente [
+		cti:nm_docente "JULIA MARIA RAPOSO GONCALVES DE MELO LARRE"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000513 : cti:Docente [
+		cti:nm_docente "RODRIGO NONAMOR PEREIRA MARIANO DE SOUZA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000514 : cti:Docente [
+		cti:nm_docente "SONIA VIRGINIA ALVES FRANCA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000515 : cti:Docente [
+		cti:nm_docente "SERGIO LUIZ FERREIRA DA SILVA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000516 : cti:Docente [
+		cti:nm_docente "ALEXANDRE CAMPELO DE OLIVEIRA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000517 : cti:Docente [
+		cti:nm_docente "CARLOS ROMERO FERREIRA DE OLIVEIRA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000518 : cti:Docente [
+		cti:nm_docente "GENIVAL BARROS JUNIOR"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000519 : cti:Docente [
+		cti:nm_docente "MAURICIO LUIZ DE MELLO VIEIRA LEITE"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000520 : cti:Docente [
+		cti:nm_docente "LUIZ GUILHERME MEDEIROS PESSOA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000521 : cti:Docente [
+		cti:nm_docente "LINDOMAR MARIA DA SILVEIRA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000522 : cti:Docente [
+		cti:nm_docente "CLAUDIA HELENA CYSNEIROS MATOS DE OLIVEIRA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000523 : cti:Docente [
+		cti:nm_docente "FILIPE ROLIM CORDEIRO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000524 : cti:Docente [
+		cti:nm_docente "MARIA DA CONCEICAO MORAES BATISTA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000525 : cti:Docente [
+		cti:nm_docente "JOAO PAULO SILVA DO MONTE LIMA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000526 : cti:Docente [
+		cti:nm_docente "GLAUCO ESTACIO GONCALVES"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000527 : cti:Docente [
+		cti:nm_docente "SIDNEY DE CARVALHO NOGUEIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000528 : cti:Docente [
+		cti:nm_docente "FERNANDO JORGE SAMPAIO MORAES"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000529 : cti:Docente [
+		cti:nm_docente "RICARDO ANDRE CAVALCANTE DE SOUZA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000530 : cti:Docente [
+		cti:nm_docente "VICTOR WANDERLEY COSTA DE MEDEIROS"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000531 : cti:Docente [
+		cti:nm_docente "VALMIR MACARIO FILHO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000532 : cti:Docente [
+		cti:nm_docente "FERNANDO ANTONIO AIRES LINS"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000533 : cti:Docente [
+		cti:nm_docente "GILBERTO AMADO DE AZEVEDO CYSNEIROS FILHO"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000534 : cti:Docente [
+		cti:nm_docente "ERICA TEIXEIRA GOMES DE SOUSA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000535 : cti:Docente [
+		cti:nm_docente "RINALDO JOSE DE LIMA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000536 : cti:Docente [
+		cti:nm_docente "GUSTAVO TABOADA SOLDATI"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000537 : cti:Docente [
+		cti:nm_docente "ADRIANO DO NASCIMENTO SIMOES"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000538 : cti:Docente [
+		cti:nm_docente "ANDRE LUIZ ALVES DE LIMA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000539 : cti:Docente [
+		cti:nm_docente "ANTONIO DA SILVA SOUTO"
+		cti:an_titulacao 1990
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000540 : cti:Docente [
+		cti:nm_docente "PATRICIA MUNIZ DE MEDEIROS"
+		cti:an_titulacao 2020
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000541 : cti:Docente [
+		cti:nm_docente "ANA CAROLINA BORGES LINS E SILVA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000542 : cti:Docente [
+		cti:nm_docente "FELIPE PIMENTEL LOPES DE MELO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000543 : cti:Docente [
+		cti:nm_docente "TALINE CRISTINA DA SILVA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000544 : cti:Docente [
+		cti:nm_docente "MARIA FERNANDA DE LA FUENTE CASTELLON"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000545 : cti:Docente [
+		cti:nm_docente "ROSANGELA GOMES TAVARES"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000546 : cti:Docente [
+		cti:nm_docente "SORAYA GIOVANETTI EL DEIR"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000547 : cti:Docente [
+		cti:nm_docente "ALEX SOUZA MORAES"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000548 : cti:Docente [
+		cti:nm_docente "VICTOR CASIMIRO PISCOYA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000549 : cti:Docente [
+		cti:nm_docente "PERICLES BARBOSA CUNHA DE MIRANDA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000550 : cti:Docente [
+		cti:nm_docente "ANDRE CAMARA ALVES DO NASCIMENTO"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000551 : cti:Docente [
+		cti:nm_docente "GEORGE AUGUSTO VALENCA SANTOS"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000552 : cti:Docente [
+		cti:nm_docente "ALDO TORRES SALES"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000553 : cti:Docente [
+		cti:nm_docente "MARILDA NASCIMENTO CARVALHO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000554 : cti:Docente [
+		cti:nm_docente "ROMILDO MORANT DE HOLANDA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000555 : cti:Docente [
+		cti:nm_docente "ANDRE FELIPE DE MELO SALES SANTOS"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000556 : cti:Docente [
+		cti:nm_docente "POMPEIA DE VILLACHAN E LYRA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000557 : cti:Docente [
+		cti:nm_docente "DENISE MARIA BOTELHO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000558 : cti:Docente [
+		cti:nm_docente "BRUNA TARCILIA FERRAZ"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000559 : cti:Docente [
+		cti:nm_docente "RODRIGO FELIPE RODRIGUES DO CARMO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000560 : cti:Docente [
+		cti:nm_docente "ULYSSES PAULINO DE ALBUQUERQUE"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000561 : cti:Docente [
+		cti:nm_docente "OTAVIO AUGUSTO ALVES DOS SANTOS"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000562 : cti:Docente [
+		cti:nm_docente "MOISES DE MELO SANTANA"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000563 : cti:Docente [
+		cti:nm_docente "EMMANUELLE CHRISTINE CHAVES DA SILVA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000564 : cti:Docente [
+		cti:nm_docente "KARLA KATIUSCIA NOBREGA DE ALMEIDA"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000565 : cti:Docente [
+		cti:nm_docente "ADILSON CELESTINO DE LIMA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000566 : cti:Docente [
+		cti:nm_docente "TANIA NOBRE GONCALVES FERREIRA AMORIM"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000567 : cti:Docente [
+		cti:nm_docente "ANAILSON MARCIO GOMES"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000568 : cti:Docente [
+		cti:nm_docente "ALDO LEONARDO CUNHA CALLADO"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000569 : cti:Docente [
+		cti:nm_docente "DIEGO DE SOUZA BUARQUE"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000570 : cti:Docente [
+		cti:nm_docente "ANDRE MACIEL NETTO"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000571 : cti:Docente [
+		cti:nm_docente "FERNANDO CARTAXO ROLIM NETO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000572 : cti:Docente [
+		cti:nm_docente "VALMIR CRISTIANO MARQUES DE ARRUDA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000573 : cti:Docente [
+		cti:nm_docente "CAROLINA CAVALCANTI FALCAO"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000574 : cti:Docente [
+		cti:nm_docente "FLAVIA MENDES DE ANDRADE E PERES"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000575 : cti:Docente [
+		cti:nm_docente "HUGO MONTEIRO FERREIRA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000576 : cti:Docente [
+		cti:nm_docente "DIOGO MARTINS NUNES"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000577 : cti:Docente [
+		cti:nm_docente "RAMON ENRIQUE RAMAYO GONZALEZ"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000578 : cti:Docente [
+		cti:nm_docente "ELINEIDE BARBOSA DE SOUZA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000579 : cti:Docente [
+		cti:nm_docente "ROSANGELA CELY BRANCO LINDOSO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000580 : cti:Docente [
+		cti:nm_docente "ANDREA PAIVA BOTELHO LAPENDA DE MOURA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000581 : cti:Docente [
+		cti:nm_docente "PETRONIO JOSE DE LIMA MARTELLI"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000582 : cti:Docente [
+		cti:nm_docente "MATEUS MATIUZZI DA COSTA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000583 : cti:Docente [
+		cti:nm_docente "FERNANDO JOSE DE PAULA CUNHA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000584 : cti:Docente [
+		cti:nm_docente "LILIAN MARGARETE PAES GUIMARAES"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000585 : cti:Docente [
+		cti:nm_docente "EDNILZA MARANHAO DOS SANTOS"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000586 : cti:Docente [
+		cti:nm_docente "CARLOS HENRIQUE DOS ANJOS DOS SANTOS"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000587 : cti:Docente [
+		cti:nm_docente "EDGAR CORREA DE AMORIM FILHO"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000588 : cti:Docente [
+		cti:nm_docente "MERCIA RODRIGUES BARROS"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000589 : cti:Docente [
+		cti:nm_docente "PAULO ROBERTO SANTIAGO"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000590 : cti:Docente [
+		cti:nm_docente "MARCOS PAZ SARAIVA CAMARA"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000591 : cti:Docente [
+		cti:nm_docente "MARCELO PEDRO DOS SANTOS"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000592 : cti:Docente [
+		cti:nm_docente "SERGIO VLADIMIR BARREIRO DEGIORGI"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000593 : cti:Docente [
+		cti:nm_docente "FABIANO BARBOSA MENDES DA SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000594 : cti:Docente [
+		cti:nm_docente "ROSANA BLAWID"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000595 : cti:Docente [
+		cti:nm_docente "CLESSIUS SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000596 : cti:Docente [
+		cti:nm_docente "ANGELO BRAS FERNANDES CALLOU"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000597 : cti:Docente [
+		cti:nm_docente "MARIA DAS GRACAS ANDRADE ATAIDE DE ALMEIDA"
+		cti:an_titulacao 1995
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000598 : cti:Docente [
+		cti:nm_docente "MARIA SALETT TAUK SANTOS"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000599 : cti:Docente [
+		cti:nm_docente "PAULO DE JESUS"
+		cti:an_titulacao 1992
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000600 : cti:Docente [
+		cti:nm_docente "JOSE WILSON DA SILVA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000601 : cti:Docente [
+		cti:nm_docente "ALEXSANDRO DOS SANTOS MACHADO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000602 : cti:Docente [
+		cti:nm_docente "MARIA LUIZA LINS E SILVA PIRES"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000603 : cti:Docente [
+		cti:nm_docente "CARLOS ANTONIO FERNANDES SANTOS"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000604 : cti:Docente [
+		cti:nm_docente "ITALO ROGER FERREIRA MORENO PINHEIRO DA SILVA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000605 : cti:Docente [
+		cti:nm_docente "VINICIUS DANTAS DE ARAUJO"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000606 : cti:Docente [
+		cti:nm_docente "PAULA BRAGA GOMES"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000607 : cti:Docente [
+		cti:nm_docente "JONES OLIVEIRA DE ALBUQUERQUE"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000608 : cti:Docente [
+		cti:nm_docente "BRUNO KAROL CORDEIRO FILGUEIRAS"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000609 : cti:Docente [
+		cti:nm_docente "SERGIO MONTHEZUMA SANTOIANNI GUERRA"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000610 : cti:Docente [
+		cti:nm_docente "EDUARDO ALBERTO TUDURY"
+		cti:an_titulacao 1996
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000611 : cti:Docente [
+		cti:nm_docente "DANILO TEIXEIRA CAVALCANTE"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000612 : cti:Docente [
+		cti:nm_docente "JONAS ROMERO FONSECA DE LIMA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000613 : cti:Docente [
+		cti:nm_docente "ADEILSON PINHEIRO SEDRINS"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000614 : cti:Docente [
+		cti:nm_docente "FRANCISCO ROBERTO CAPORAL"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000615 : cti:Docente [
+		cti:nm_docente "BETANIA MACIEL DE ARAUJO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000616 : cti:Docente [
+		cti:nm_docente "SEVERINO ALVES DE LUCENA FILHO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000617 : cti:Docente [
+		cti:nm_docente "VIRGINIA MEDEIROS DE SIQUEIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000618 : cti:Docente [
+		cti:nm_docente "ANA VIRGINIA DE LIMA LEITE"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000619 : cti:Docente [
+		cti:nm_docente "DIMAS MENEZES"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000620 : cti:Docente [
+		cti:nm_docente "ROSIMAR DOS SANTOS MUSSER"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000621 : cti:Docente [
+		cti:nm_docente "HUMBERSON ROCHA SILVA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000622 : cti:Docente [
+		cti:nm_docente "ADRIANO DA SILVA MARQUES"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000623 : cti:Docente [
+		cti:nm_docente "ADRIANA GUIM"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000624 : cti:Docente [
+		cti:nm_docente "ANTONIA SHERLANEA CHAVES VERAS"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000625 : cti:Docente [
+		cti:nm_docente "ERMS RODRIGUES PEREIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000626 : cti:Docente [
+		cti:nm_docente "NEWTON PEREIRA STAMFORD"
+		cti:an_titulacao 1978
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000627 : cti:Docente [
+		cti:nm_docente "IRENILDA DE SOUZA LIMA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000628 : cti:Docente [
+		cti:nm_docente "JULIANO MARTINS SANTIAGO"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000629 : cti:Docente [
+		cti:nm_docente "MARLEYNE JOSE AFONSO ACCIOLY LINS AMORIM"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000630 : cti:Docente [
+		cti:nm_docente "MACIO FARIAS DE MOURA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000631 : cti:Docente [
+		cti:nm_docente "EMANUELA POLIMENI DE MESQUITA"
+		cti:an_titulacao 2018
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000632 : cti:Docente [
+		cti:nm_docente "CARLINDO VITORIANO DOS SANTOS JUNIOR"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000633 : cti:Docente [
+		cti:nm_docente "SILVIA ELAINE RODOLFO DE SA LORENA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000634 : cti:Docente [
+		cti:nm_docente "ELIZABETE RODRIGUES DA SILVA"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000635 : cti:Docente [
+		cti:nm_docente "MARCIA BERSANE ARAUJO DE MEDEIROS TORRES"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000636 : cti:Docente [
+		cti:nm_docente "JORGE EDUARDO CAVALCANTE LUCENA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000637 : cti:Docente [
+		cti:nm_docente "PRISCILA FABIANA MACEDO LOPES"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000638 : cti:Docente [
+		cti:nm_docente "VERONICA CRISTHINA DE SOUZA DINIZ"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "MATERIAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000639 : cti:Docente [
+		cti:nm_docente "ANDRE LUIZ RODRIGUES MAGALHAES"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000640 : cti:Docente [
+		cti:nm_docente "ALEXANDRE TAVARES DA ROCHA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000641 : cti:Docente [
+		cti:nm_docente "GUSTAVO PEREIRA DUDA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000642 : cti:Docente [
+		cti:nm_docente "MARIA ADELIA BORSTELMANN DE OLIVEIRA"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000643 : cti:Docente [
+		cti:nm_docente "ALBERICIO PEREIRA DE ANDRADE"
+		cti:an_titulacao 1992
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000644 : cti:Docente [
+		cti:nm_docente "KEDMA MARIA SILVA PINTO"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000645 : cti:Docente [
+		cti:nm_docente "JEANDSON SILVA VIANA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000646 : cti:Docente [
+		cti:nm_docente "LUIZ CARLOS FONTES BAPTISTA FILHO"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000647 : cti:Docente [
+		cti:nm_docente "JOSICLEDA DOMICIANO GALVINCIO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000648 : cti:Docente [
+		cti:nm_docente "RACHEL MARIA DE LYRA NEVES"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000649 : cti:Docente [
+		cti:nm_docente "JOAO TIAGO CORREIA OLIVEIRA"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000650 : cti:Docente [
+		cti:nm_docente "PEDRO GREGORIO VIEIRA AQUINO"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000651 : cti:Docente [
+		cti:nm_docente "WALLACE RODRIGUES TELINO JUNIOR"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000652 : cti:Docente [
+		cti:nm_docente "THIBERIO PINHO COSTA SOUZA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000653 : cti:Docente [
+		cti:nm_docente "GERLA CASTELLO BRANCO CHINELATE"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000654 : cti:Docente [
+		cti:nm_docente "ANTONIO CELSO DANTAS ANTONINO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000655 : cti:Docente [
+		cti:nm_docente "JOSE ROMUALDO DE SOUSA LIMA"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000656 : cti:Docente [
+		cti:nm_docente "ERNANDE BARBOSA DA COSTA"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000657 : cti:Docente [
+		cti:nm_docente "MARCIEL TEIXEIRA DE OLIVEIRA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000658 : cti:Docente [
+		cti:nm_docente "ADENILTON JOSE DA SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000659 : cti:Docente [
+		cti:nm_docente "MAURICIO CLAUDIO HORTA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000660 : cti:Docente [
+		cti:nm_docente "KLEBER REGIS SANTORO"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000661 : cti:Docente [
+		cti:nm_docente "WERONICA MEIRA DE SOUZA"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000662 : cti:Docente [
+		cti:nm_docente "ROMERO LUIZ MENDONCA SALES FILHO"
+		cti:an_titulacao 2016
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000663 : cti:Docente [
+		cti:nm_docente "TACIANA RABELO RAMALHO RAMOS"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000664 : cti:Docente [
+		cti:nm_docente "RICARDO BRAUER VIGODERIS"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000665 : cti:Docente [
+		cti:nm_docente "MARCELO METRI CORREA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000666 : cti:Docente [
+		cti:nm_docente "EDILMA PEREIRA GONCALVES"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000667 : cti:Docente [
+		cti:nm_docente "VERONICA SOARES FERNANDES"
+		cti:an_titulacao 2020
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000668 : cti:Docente [
+		cti:nm_docente "SAULO DE TARSO GUSMAO DA SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000669 : cti:Docente [
+		cti:nm_docente "AIRON APARECIDO SILVA DE MELO"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000670 : cti:Docente [
+		cti:nm_docente "RICARDO ALEXANDRE SILVA PESSOA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000671 : cti:Docente [
+		cti:nm_docente "RODOLFO JOSE CAVALCANTI SOUTO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000672 : cti:Docente [
+		cti:nm_docente "RENATO JOSE REIS MOLICA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "CIÊNCIAS AMBIENTAIS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000673 : cti:Docente [
+		cti:nm_docente "MARIZETE SILVA SANTOS"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000674 : cti:Docente [
+		cti:nm_docente "MARCELO MENDONCA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000675 : cti:Docente [
+		cti:nm_docente "CHRISTINI BARBOSA CASELLI"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000676 : cti:Docente [
+		cti:nm_docente "DULCIENE KARLA DE ANDRADE SILVA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000677 : cti:Docente [
+		cti:nm_docente "CESAR AUGUSTE BADJI"
+		cti:an_titulacao 2019
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000678 : cti:Docente [
+		cti:nm_docente "MARIO ADRIANO AVILA QUEIROZ"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000679 : cti:Docente [
+		cti:nm_docente "NILSON PEREIRA DE CARVALHO"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000680 : cti:Docente [
+		cti:nm_docente "JOSE VARGAS DE OLIVEIRA"
+		cti:an_titulacao 1978
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000681 : cti:Docente [
+		cti:nm_docente "LUIZ CARLOS MARANGON"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000682 : cti:Docente [
+		cti:nm_docente "FABIO HISSA VIEIRA HAZIN"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000683 : cti:Docente [
+		cti:nm_docente "ALMIR SILVEIRA MENELAU"
+		cti:an_titulacao 1993
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000684 : cti:Docente [
+		cti:nm_docente "ANDRE MARQUES CAVALCANTI"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000685 : cti:Docente [
+		cti:nm_docente "MARCELO MACHADO MARTINS"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000686 : cti:Docente [
+		cti:nm_docente "MARCIA PRAGANA DANTAS"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "MATEMÁTICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000687 : cti:Docente [
+		cti:nm_docente "FLAVIA ZIMMERLE DA NOBREGA COSTA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000688 : cti:Docente [
+		cti:nm_docente "MARCOS RIBEIRO DA SILVA VIEIRA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000689 : cti:Docente [
+		cti:nm_docente "ROBERTO SOARES DE CASTRO"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000690 : cti:Docente [
+		cti:nm_docente "JOSEANA MARIA SARAIVA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000691 : cti:Docente [
+		cti:nm_docente "SEVERINO MENDES DE AZEVEDO JUNIOR"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000692 : cti:Docente [
+		cti:nm_docente "SALOMAO ALENCAR DE FARIAS"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000693 : cti:Docente [
+		cti:nm_docente "THIAGO ANTONIO DE SOUSA ARAUJO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000694 : cti:Docente [
+		cti:nm_docente "CLAUDIA CRISTINA CARDOSO BEJAN"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000695 : cti:Docente [
+		cti:nm_docente "SUELY CRISTINA ALBUQUERQUE DE LUNA"
+		cti:an_titulacao 2001
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000696 : cti:Docente [
+		cti:nm_docente "ANDRELINA MARIA PINHEIRO SANTOS"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000697 : cti:Docente [
+		cti:nm_docente "ROBSON MAGNO LIBERAL VERAS"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000698 : cti:Docente [
+		cti:nm_docente "DORGIVAL MORAIS DE LIMA JUNIOR"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000699 : cti:Docente [
+		cti:nm_docente "ETIENNE AMORIM ALBINO DA SILVA MARTINS"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000700 : cti:Docente [
+		cti:nm_docente "ANALICE DE ALMEIDA LIMA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000701 : cti:Docente [
+		cti:nm_docente "SIGRID NEUMANN LEITAO"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000702 : cti:Docente [
+		cti:nm_docente "PEDRO HUGO DE FIGUEIREDO"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000703 : cti:Docente [
+		cti:nm_docente "MARIA ALICE VASCONCELOS ROCHA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000704 : cti:Docente [
+		cti:nm_docente "LAURA SUSANA DUQUE ARRAZOLA"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000705 : cti:Docente [
+		cti:nm_docente "JUAN CARLOS ALVAREZ PIZARRO"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000706 : cti:Docente [
+		cti:nm_docente "MARIA FRANCO TRINDADE MEDEIROS"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000707 : cti:Docente [
+		cti:nm_docente "XIRLEY PEREIRA NUNES"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000708 : cti:Docente [
+		cti:nm_docente "LINDOMAR JOSE PENA"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "FARMÁCIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000709 : cti:Docente [
+		cti:nm_docente "MARLENE MARIA OGLIARI"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000710 : cti:Docente [
+		cti:nm_docente "UEDER PEDRO LOPES"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000711 : cti:Docente [
+		cti:nm_docente "WILSON MOREIRA DUTRA JUNIOR"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000712 : cti:Docente [
+		cti:nm_docente "LUCIA DE FATIMA ARAUJO"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000713 : cti:Docente [
+		cti:nm_docente "LUCIA DE FATIMA DE CARVALHO CHAVES"
+		cti:an_titulacao 1996
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000714 : cti:Docente [
+		cti:nm_docente "VALDIR DE QUEIROZ BALBINO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000715 : cti:Docente [
+		cti:nm_docente "ANA CHRISTINA BRASILEIRO VIDAL"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000716 : cti:Docente [
+		cti:nm_docente "GERSON QUIRINO BASTOS"
+		cti:an_titulacao 1995
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000717 : cti:Docente [
+		cti:nm_docente "WASHINGTON SOARES FERREIRA JUNIOR"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000718 : cti:Docente [
+		cti:nm_docente "JULIANA SANTOS SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000719 : cti:Docente [
+		cti:nm_docente "MARCELO CAMARA DOS SANTOS"
+		cti:an_titulacao 1995
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000720 : cti:Docente [
+		cti:nm_docente "DARCLET TERESINHA DOS SANTOS MALERBO"
+		cti:an_titulacao 1996
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000721 : cti:Docente [
+		cti:nm_docente "LUCIANA FELIZARDO PEREIRA SOARES"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000722 : cti:Docente [
+		cti:nm_docente "BERNARDO BARBOSA DA SILVA"
+		cti:an_titulacao 1996
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000723 : cti:Docente [
+		cti:nm_docente "LEONARDO BARROS RIBEIRO"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000724 : cti:Docente [
+		cti:nm_docente "ANTONY CARDOSO BEZERRA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000725 : cti:Docente [
+		cti:nm_docente "MARCELO ALVES RAMOS"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000726 : cti:Docente [
+		cti:nm_docente "FRANCISCO LUIZ DOS SANTOS"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000727 : cti:Docente [
+		cti:nm_docente "ELBA MARIA NOGUEIRA FERRAZ RAMOS"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000728 : cti:Docente [
+		cti:nm_docente "ENIO WOCYLI DANTAS"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000729 : cti:Docente [
+		cti:nm_docente "NADJA MARIA ACIOLY REGNIER"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000730 : cti:Docente [
+		cti:nm_docente "RAFAEL DUEIRE LINS"
+		cti:an_titulacao 1986
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000731 : cti:Docente [
+		cti:nm_docente "ALBERTO CESAR CAVALCANTI FRANCA"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000732 : cti:Docente [
+		cti:nm_docente "WELLINGTON ROMERO SERAFIM FREIRE"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000733 : cti:Docente [
+		cti:nm_docente "KLEBER ANDRADE DA SILVA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000734 : cti:Docente [
+		cti:nm_docente "MICHELLE RAYSSA PEREIRA DE MELO"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000735 : cti:Docente [
+		cti:nm_docente "HECTOR RAUL MONTAGNE DUGROS"
+		cti:an_titulacao 1996
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000736 : cti:Docente [
+		cti:nm_docente "CAIO VELOSO SATIRO"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000737 : cti:Docente [
+		cti:nm_docente "DANIELE SILVA RIBEIRO"
+		cti:an_titulacao 2017
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000738 : cti:Docente [
+		cti:nm_docente "SILVIO CESAR SAMPAIO"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000739 : cti:Docente [
+		cti:nm_docente "MARCILIO DE AZEVEDO"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000740 : cti:Docente [
+		cti:nm_docente "MARIA ANGELA CALDAS DIDIER"
+		cti:an_titulacao 2011
+		cti:nm_area_conhecimento "MATEMÁTICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000741 : cti:Docente [
+		cti:nm_docente "ANA CRISTINA LAUER GARCIA"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000742 : cti:Docente [
+		cti:nm_docente "GUILHERME VILAR"
+		cti:an_titulacao 1990
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000743 : cti:Docente [
+		cti:nm_docente "CONCEICAO APARECIDA SOARES MENDONCA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000744 : cti:Docente [
+		cti:nm_docente "ALBERTO EINSTEIN PEREIRA DE ARAUJO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000745 : cti:Docente [
+		cti:nm_docente "AUREA WISCHRAL"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000746 : cti:Docente [
+		cti:nm_docente "ERILANE DE CASTRO LIMA MACHADO"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000747 : cti:Docente [
+		cti:nm_docente "SOPHIE ANNICK NATHALIE LANCO BERTRAND"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000748 : cti:Docente [
+		cti:nm_docente "THAYSA RODRIGUES TORRES"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000749 : cti:Docente [
+		cti:nm_docente "EUDES DE SOUZA CORREIA"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000750 : cti:Docente [
+		cti:nm_docente "CELIANE GOMES MAIA DA SILVA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000751 : cti:Docente [
+		cti:nm_docente "MARGARETH FERREIRA DE SALES"
+		cti:an_titulacao 1993
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000752 : cti:Docente [
+		cti:nm_docente "SONIA MARIA BARRETO PEREIRA"
+		cti:an_titulacao 1978
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000753 : cti:Docente [
+		cti:nm_docente "ANGELA MARIA VIEIRA BATISTA"
+		cti:an_titulacao 1990
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000754 : cti:Docente [
+		cti:nm_docente "ENAYDE DE ALMEIDA MELO"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000755 : cti:Docente [
+		cti:nm_docente "THAIS EMANUELLE MONTEIRO DOS SANTOS SOUZA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ENGENHARIA AGRÍCOLA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000756 : cti:Docente [
+		cti:nm_docente "AILTON FERNANDES DE MACEDO JUNIOR"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "FÍSICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000757 : cti:Docente [
+		cti:nm_docente "REJANE JUREMA MANSUR CUSTODIO NOGUEIRA"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000758 : cti:Docente [
+		cti:nm_docente "MONICA MARIA LINS SANTIAGO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000759 : cti:Docente [
+		cti:nm_docente "SAVIO ROBERTO FONSECA DE FREITAS"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000760 : cti:Docente [
+		cti:nm_docente "REGINALDO BARROS"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000761 : cti:Docente [
+		cti:nm_docente "VALDEREZ PONTES MATOS"
+		cti:an_titulacao 1988
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000762 : cti:Docente [
+		cti:nm_docente "MARCIA ALMEIDA DE MELO"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000763 : cti:Docente [
+		cti:nm_docente "FERNANDA MARIA DUARTE DO AMARAL"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000764 : cti:Docente [
+		cti:nm_docente "HUMBERTO GOMES HAZIN"
+		cti:an_titulacao 2006
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000765 : cti:Docente [
+		cti:nm_docente "MAITE KULESZA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "MATEMÁTICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000766 : cti:Docente [
+		cti:nm_docente "MARCELO DE OLIVEIRA MILFONT"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000767 : cti:Docente [
+		cti:nm_docente "OMER CAVALCANTI DE ALMEIDA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000768 : cti:Docente [
+		cti:nm_docente "KALINA VANDERLEI PAIVA DA SILVA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000769 : cti:Docente [
+		cti:nm_docente "IRANILSON BURITI DE OLIVEIRA"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000770 : cti:Docente [
+		cti:nm_docente "VICENTE IMBROISI TEIXEIRA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000771 : cti:Docente [
+		cti:nm_docente "ISABELLE MARIA JACQUELINE MEUNIER"
+		cti:an_titulacao 2014
+		cti:nm_area_conhecimento "RECURSOS FLORESTAIS E ENGENHARIA FLORESTAL"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000772 : cti:Docente [
+		cti:nm_docente "ROSA DE LIMA RAMOS MARIANO"
+		cti:an_titulacao 1986
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000773 : cti:Docente [
+		cti:nm_docente "MARIO DE ANDRADE LIRA"
+		cti:an_titulacao 1974
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000774 : cti:Docente [
+		cti:nm_docente "SEVERINO BENONE PAES BARBOSA"
+		cti:an_titulacao 1990
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000775 : cti:Docente [
+		cti:nm_docente "MARIA EULALIA DE MORAES MELO"
+		cti:an_titulacao 1993
+		cti:nm_area_conhecimento "MATEMÁTICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000776 : cti:Docente [
+		cti:nm_docente "ANDRE AUGUSTO PIMENTEL LIESEN NASCIMENTO"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000777 : cti:Docente [
+		cti:nm_docente "VERA LUCIA ARROXELAS GALVAO DE LIMA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "CIÊNCIA E TECNOLOGIA DE ALIMENTOS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000778 : cti:Docente [
+		cti:nm_docente "JOAO HUGO BARACUY DA CUNHA CAMPOS"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000779 : cti:Docente [
+		cti:nm_docente "MARIA APARECIDA DA GLORIA FAUSTINO"
+		cti:an_titulacao 1993
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000780 : cti:Docente [
+		cti:nm_docente "WILSON TREGER ZYDOWICZ DE SOUSA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000781 : cti:Docente [
+		cti:nm_docente "ALVARO JOSE DE ALMEIDA BICUDO"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000782 : cti:Docente [
+		cti:nm_docente "DANIELA MOREIRA DE CARVALHO"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000783 : cti:Docente [
+		cti:nm_docente "FABIANA DE FATIMA BRUCE DA SILVA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000784 : cti:Docente [
+		cti:nm_docente "JARCILENE SILVA DE ALMEIDA"
+		cti:an_titulacao 1997
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000785 : cti:Docente [
+		cti:nm_docente "LEANDRO MANZONI VIEIRA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000786 : cti:Docente [
+		cti:nm_docente "MARCELO FRANCISCO POMPELLI"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000787 : cti:Docente [
+		cti:nm_docente "PERICLES DE ALBUQUERQUE MELO FILHO"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000788 : cti:Docente [
+		cti:nm_docente "MONALISA ALVES DINIZ DA SILVA CAMARGO PINTO"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000789 : cti:Docente [
+		cti:nm_docente "KEDES PAULO PEREIRA"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000790 : cti:Docente [
+		cti:nm_docente "VALBERES BERNARDO DO NASCIMENTO"
+		cti:an_titulacao 1998
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000791 : cti:Docente [
+		cti:nm_docente "CLARA NILCE BARBOSA"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000792 : cti:Docente [
+		cti:nm_docente "BOGDAN DOBOSZEWSKI"
+		cti:an_titulacao 1983
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000793 : cti:Docente [
+		cti:nm_docente "REINALDO FARIAS PAIVA DE LUCENA"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000794 : cti:Docente [
+		cti:nm_docente "HELCIO JOSE BATISTA"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "QUÍMICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000795 : cti:Docente [
+		cti:nm_docente "LUCIANO AVALLONE BUENO"
+		cti:an_titulacao 2003
+		cti:nm_area_conhecimento "BIOTECNOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000796 : cti:Docente [
+		cti:nm_docente "ALESSANDRO NICOLI"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000797 : cti:Docente [
+		cti:nm_docente "MARCELO WEINSTEIN TEIXEIRA"
+		cti:an_titulacao 2007
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000798 : cti:Docente [
+		cti:nm_docente "MARIA DE MASCENA DINIZ MAIA"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000799 : cti:Docente [
+		cti:nm_docente "CLAUDIA ROBERTA DE ARAUJO GOMES"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ENSINO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000800 : cti:Docente [
+		cti:nm_docente "TEREZINHA DE JESUS RANGEL CAMARA"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000801 : cti:Docente [
+		cti:nm_docente "RITA DE CASSIA SOARES CARDOSO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "ZOOTECNIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000802 : cti:Docente [
+		cti:nm_docente "SILVIO ROMERO DE LEMOS MEIRA"
+		cti:an_titulacao 1985
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000803 : cti:Docente [
+		cti:nm_docente "ALICE DE JESUS KOZAKEVICIUS"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "CIÊNCIA DA COMPUTAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000804 : cti:Docente [
+		cti:nm_docente "EVERARDO VALADARES DE SA BARRETO SAMPAIO"
+		cti:an_titulacao 1973
+		cti:nm_area_conhecimento "BOTÂNICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000805 : cti:Docente [
+		cti:nm_docente "ETIENNE AMORIM ALBINO DA SILVA"
+		cti:an_titulacao 2015
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000806 : cti:Docente [
+		cti:nm_docente "NEUZA MARIA DA SILVA"
+		cti:an_titulacao 1994
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000807 : cti:Docente [
+		cti:nm_docente "MARIA ANGELA DE FARIA GRILLO"
+		cti:an_titulacao 2005
+		cti:nm_area_conhecimento "HISTÓRIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000808 : cti:Docente [
+		cti:nm_docente "ANGELA VALERIA ALVES DA SILVA"
+		cti:an_titulacao 2013
+		cti:nm_area_conhecimento "LETRAS"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000809 : cti:Docente [
+		cti:nm_docente "LINCOLN ELOI DE ARAUJO"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "ENGENHARIA SANITÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000810 : cti:Docente [
+		cti:nm_docente "LUCIA MARIA GOES MOUTINHO"
+		cti:an_titulacao 1995
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000811 : cti:Docente [
+		cti:nm_docente "LILIA GOMES WILLADINO"
+		cti:an_titulacao 1993
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000812 : cti:Docente [
+		cti:nm_docente "FERNANDO JOAQUIM FERREIRA MAIA"
+		cti:an_titulacao 2012
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000813 : cti:Docente [
+		cti:nm_docente "JULIANO BANDEIRA LIMA"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000814 : cti:Docente [
+		cti:nm_docente "ANTONIO NEVES DUARTE TEODORO"
+		cti:an_titulacao 1999
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000815 : cti:Docente [
+		cti:nm_docente "RUSSELL PARRY SCOTT"
+		cti:an_titulacao 1981
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000816 : cti:Docente [
+		cti:nm_docente "ERICA PIROS KOVACS"
+		cti:an_titulacao 2009
+		cti:nm_area_conhecimento "ADMINISTRAÇÃO"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000817 : cti:Docente [
+		cti:nm_docente "RONALDO OLIVERA CAVALLI"
+		cti:an_titulacao 2000
+		cti:nm_area_conhecimento "RECURSOS PESQUEIROS E ENGENHARIA DE PESCA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000818 : cti:Docente [
+		cti:nm_docente "DOMINGOS SAVIO PEREIRA SALAZAR"
+		cti:an_titulacao 2010
+		cti:nm_area_conhecimento "EDUCAÇÃO"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000819 : cti:Docente [
+		cti:nm_docente "GILVAN PIO RIBEIRO"
+		cti:an_titulacao 1979
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000820 : cti:Docente [
+		cti:nm_docente "JULIA KUKLINSKY SOBRAL"
+		cti:an_titulacao 2004
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000821 : cti:Docente [
+		cti:nm_docente "FERNANDO LEANDRO DOS SANTOS"
+		cti:an_titulacao 2002
+		cti:nm_area_conhecimento "MEDICINA VETERINÁRIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000822 : cti:Docente [
+		cti:nm_docente "AURELIO PAES BARROS JUNIOR"
+		cti:an_titulacao 2008
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000823 : cti:Docente [
+		cti:nm_docente "MARIA DAS DORES SARAIVA DE LORETO"
+		cti:an_titulacao 1986
+		cti:nm_area_conhecimento "ECONOMIA DOMÉSTICA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+	instance docente_000824 : cti:Docente [
+		cti:nm_docente "SONIA MARIA ALVES DE OLIVEIRA"
+		cti:an_titulacao 1991
+		cti:nm_area_conhecimento "AGRONOMIA"
+		cti:ds_categoria "PERMANENTE"
+	]
+
+	instance docente_000825 : cti:Docente [
+		cti:nm_docente "PAULO DE PAULA MENDES"
+		cti:an_titulacao 1992
+		cti:nm_area_conhecimento "ECOLOGIA"
+		cti:ds_categoria "COLABORADOR"
+	]
+
+}
