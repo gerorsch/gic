@@ -18,6 +18,7 @@ load_dotenv(SCRIPT_DIR / ".env")
 
 AUTHOR_SEARCH_URL = "https://api.elsevier.com/content/search/author"
 AUTHOR_RETRIEVAL_URL = "https://api.elsevier.com/content/author/author_id"
+AFFILIATION_SEARCH_URL = "https://api.elsevier.com/content/search/affiliation"
 
 
 class ScopusAPIError(RuntimeError):
@@ -31,6 +32,17 @@ class AuthorCandidate:
     given_name: str | None = None
     surname: str | None = None
     affiliation_name: str | None = None
+    document_count: int | None = None
+    raw: dict[str, Any] = field(default_factory=dict)
+
+
+@dataclass
+class AffiliationCandidate:
+    affiliation_id: str
+    name: str | None = None
+    name_variant: str | None = None
+    city: str | None = None
+    country: str | None = None
     document_count: int | None = None
     raw: dict[str, Any] = field(default_factory=dict)
 
@@ -162,6 +174,69 @@ class ScopusClient:
             start=0,
             view=view,
         )
+
+    def search_affiliation(self, query: str, count: int = 25) -> list[AffiliationCandidate]:
+        data = self._get(
+            AFFILIATION_SEARCH_URL,
+            params={"query": query, "count": min(count, 200)},
+        )
+        entries = _as_list(_nested_get(data, ["search-results", "entry"]))
+        results: list[AffiliationCandidate] = []
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+            results.append(
+                AffiliationCandidate(
+                    affiliation_id=_strip_prefix(entry.get("dc:identifier"), "AFFILIATION_ID:"),
+                    name=entry.get("affiliation-name"),
+                    name_variant=entry.get("name-variant"),
+                    city=entry.get("city"),
+                    country=entry.get("country"),
+                    document_count=_safe_int(entry.get("document-count")),
+                    raw=entry,
+                )
+            )
+        return results
+
+    def iter_authors_by_affiliation(
+        self,
+        affiliation_id: str,
+        page_size: int = 200,
+        max_results: int | None = None,
+        view: str = "STANDARD",
+    ):
+        clean_id = _strip_prefix(affiliation_id, "AFFILIATION_ID:")
+        query = f"AF-ID({clean_id})"
+        start = 0
+        yielded = 0
+
+        while True:
+            data = self._get(
+                AUTHOR_SEARCH_URL,
+                params={
+                    "query": query,
+                    "count": min(page_size, 25 if view.upper() == "COMPLETE" else 200),
+                    "start": start,
+                    "view": view,
+                },
+            )
+            entries = _as_list(_nested_get(data, ["search-results", "entry"]))
+            total = _safe_int(_nested_get(data, ["search-results", "opensearch:totalResults"]))
+
+            if not entries:
+                return
+
+            for entry in entries:
+                if not isinstance(entry, dict):
+                    continue
+                yield self._parse_author_candidate(entry)
+                yielded += 1
+                if max_results is not None and yielded >= max_results:
+                    return
+
+            start += len(entries)
+            if total is not None and start >= total:
+                return
 
     def get_author_metrics(self, author_id: str, view: str = "METRICS") -> AuthorMetrics:
         clean_id = _strip_prefix(author_id, "AUTHOR_ID:")
