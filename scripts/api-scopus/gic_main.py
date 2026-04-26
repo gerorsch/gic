@@ -169,6 +169,11 @@ def _build_record_base(author_name: str) -> dict[str, Any]:
     }
 
 
+def _flush_records(records: list[dict[str, Any]], output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(records).to_csv(output_path, index=False, encoding="utf-8")
+
+
 def run(args: argparse.Namespace) -> int:
     input_path = args.input.resolve()
     output_path = args.output.resolve()
@@ -224,21 +229,33 @@ def run(args: argparse.Namespace) -> int:
                 records.append(row)
                 continue
 
-            metrics = client.get_author_metrics(best.author_id, view=args.retrieval_view)
-
             row.update(
                 {
-                    "citation_count": metrics.citation_count,
-                    "h_index": metrics.h_index,
-                    "document_count": metrics.document_count,
-                    "scopus_author_id": metrics.author_id,
-                    "scopus_indexed_name": metrics.indexed_name or best.indexed_name,
-                    "scopus_affiliation_name": metrics.affiliation_name or best.affiliation_name,
-                    "match_status": "matched",
+                    "scopus_author_id": best.author_id,
+                    "scopus_indexed_name": best.indexed_name,
+                    "scopus_affiliation_name": best.affiliation_name,
+                    "document_count": best.document_count,
                     "match_score": score,
                 }
             )
-            records.append(row)
+
+            if args.skip_metrics:
+                row["match_status"] = "found"
+                records.append(row)
+            else:
+                metrics = client.get_author_metrics(best.author_id, view=args.retrieval_view)
+                row.update(
+                    {
+                        "citation_count": metrics.citation_count,
+                        "h_index": metrics.h_index,
+                        "document_count": metrics.document_count if metrics.document_count is not None else best.document_count,
+                        "scopus_author_id": metrics.author_id,
+                        "scopus_indexed_name": metrics.indexed_name or best.indexed_name,
+                        "scopus_affiliation_name": metrics.affiliation_name or best.affiliation_name,
+                        "match_status": "matched",
+                    }
+                )
+                records.append(row)
 
         except (ScopusAPIError, requests.RequestException) as exc:
             row["match_status"] = "api_error"
@@ -256,9 +273,12 @@ def run(args: argparse.Namespace) -> int:
         if args.sleep_seconds > 0:
             time.sleep(args.sleep_seconds)
 
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+        if args.flush_every > 0 and len(records) % args.flush_every == 0:
+            _flush_records(records, output_path)
+            logger.info("Checkpoint salvo (%s linhas) em %s", len(records), output_path)
+
+    _flush_records(records, output_path)
     output_df = pd.DataFrame(records)
-    output_df.to_csv(output_path, index=False, encoding="utf-8")
 
     matched = (output_df["match_status"] == "matched").sum()
     not_found = (output_df["match_status"] == "not_found").sum()
@@ -291,6 +311,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--overwrite", action="store_true", help="Sobrescreve o CSV de saida caso ja exista.")
     parser.add_argument("--stop-on-error", action="store_true", help="Interrompe ao primeiro erro.")
     parser.add_argument("--dry-run", action="store_true", help="Nao chama API; apenas valida leitura e gera estrutura de saida.")
+    parser.add_argument("--skip-metrics", action="store_true", help="Pula Author Retrieval; grava apenas resultados da Author Search (economiza quota de Retrieval).")
+    parser.add_argument("--flush-every", type=int, default=25, help="Grava CSV parcial a cada N linhas (checkpoint). 0 desativa.")
     return parser
 
 

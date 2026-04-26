@@ -1,92 +1,108 @@
 # Coleta de Metricas Scopus por Docente (UFRPE)
 
-Este modulo consulta a API da Elsevier/Scopus para obter metricas por autor e
-gera o arquivo CSV consumido pelo pipeline:
+Pipeline que consulta a API Elsevier/Scopus para enriquecer a lista CAPES de
+docentes UFRPE com `scopus_author_id`, `citation_count`, `h_index` e
+`document_count`. Saida final alimenta `scripts/generate_oml_from_capes_docentes_ufrpe.py`.
 
-- `scripts/generate_oml_from_capes_docentes_ufrpe.py`
+## Arquivos
 
-## Objetivo
-
-Partindo da lista de docentes (CAPES), gerar:
-
-- `data/raw/scopus/scopus_ufrpe.csv`
-
-Com as colunas minimas esperadas:
-
-- `author_name`
-- `citation_count`
-- `h_index`
-- `document_count`
-
-## Como Funciona
-
-1. Le o CSV de docentes (por padrao `data/processed/docentes_ufrpe.csv`).
-2. Faz Author Search no Scopus por nome (`AUTHFIRST + AUTHLAST`), priorizando
-   afiliacao UFRPE.
-3. Seleciona o melhor candidato de autor.
-4. Faz Author Retrieval (`view=METRICS`) para coletar citacoes/h-index/documentos.
-5. Salva o CSV final em `data/raw/scopus/scopus_ufrpe.csv`.
+| Arquivo | Papel |
+|---|---|
+| `gic_main.py` | Fase 0 - busca inicial por nome (Author Search). |
+| `enrich_metrics.py` | Fase 1 - preenche metricas via Author Retrieval. |
+| `recover_not_found.py` | Fase 2 - reprocessa `not_found` com queries alternativas. |
+| `review_matches.py` | Fase 3 - revisao manual interativa de matches suspeitos. |
+| `gic_scopus_client.py` | Cliente comum da API Elsevier. |
 
 ## Configuracao
 
-Crie/edite `.env` (na raiz do projeto ou em `scripts/api-scopus/.env`) com:
+1. `ELSEVIER_API_KEY` em `.env` (raiz do projeto ou em `scripts/api-scopus/.env`):
+   ```env
+   ELSEVIER_API_KEY=SUA_CHAVE
+   # Opcional:
+   ELSEVIER_INSTTOKEN=SEU_TOKEN
+   ```
+2. Dependencias:
+   ```bash
+   pip install pandas requests python-dotenv
+   ```
+3. Limites da API pessoal Elsevier: **5000/semana por endpoint** (Search e
+   Retrieval contam separadamente). `COMPLETE` view so funciona com INSTTOKEN.
 
-```env
-ELSEVIER_API_KEY=SUA_CHAVE_AQUI
-```
+## Pipeline
 
-Opcional:
-
-```env
-ELSEVIER_INSTTOKEN=SEU_INSTTOKEN
-```
-
-## Dependencias
-
-```bash
-pip install pandas requests python-dotenv
-```
-
-## Execucao
-
-Na raiz do projeto:
+### Fase 0 - busca por nome
 
 ```bash
-python scripts/api-scopus/gic_main.py --overwrite
+uv run gic_main.py --skip-metrics --overwrite
 ```
 
-Executar amostra pequena:
+Consome ~1 Author Search por docente (~826 chamadas).
+Gera `data/raw/scopus/scopus_ufrpe.csv` com colunas basicas e
+`match_status` em `found` / `not_found`.
+
+### Fase 1 - enriquecer com metricas
 
 ```bash
-python scripts/api-scopus/gic_main.py --limit 20 --overwrite
+uv run enrich_metrics.py
 ```
 
-Retomar a partir de um indice:
+Consome ~1 Author Retrieval por linha `found` (~680 chamadas).
+Gera `scopus_ufrpe_enriched.csv` com `citation_count` e `h_index`
+preenchidos; `match_status` vira `matched`.
+
+### Fase 2 - recuperar not_found
 
 ```bash
-python scripts/api-scopus/gic_main.py --offset 200 --limit 100 --overwrite
+uv run recover_not_found.py --input ../../data/raw/scopus/scopus_ufrpe_enriched.csv
 ```
 
-Validar fluxo sem chamar API:
+Tenta variantes de query (sem AFFIL, sobrenome apenas, preposicoes removidas)
+para os ~146 `not_found`. Consome ate ~4 Author Search por docente.
+Gera `scopus_ufrpe_recovered.csv`.
+
+### Fase 1 (novamente) - metricas dos recuperados
 
 ```bash
-python scripts/api-scopus/gic_main.py --dry-run --limit 10 --overwrite
+uv run enrich_metrics.py \
+  --input ../../data/raw/scopus/scopus_ufrpe_recovered.csv \
+  --output ../../data/raw/scopus/scopus_ufrpe.csv \
+  --only-missing
 ```
 
-## Parametros Uteis
+Grava a saida final em `scopus_ufrpe.csv` (nome que o pipeline downstream espera).
 
-- `--input`: CSV de entrada de docentes.
-- `--output`: CSV final (default `data/raw/scopus/scopus_ufrpe.csv`).
-- `--name-column`: coluna de nome do docente (default detecta `NM_DOCENTE`).
-- `--affiliation-hint`: afiliacao para melhorar o matching.
-- `--search-view`: `STANDARD` ou `COMPLETE` na Author Search API.
-- `--retrieval-view`: `METRICS` (default), `LIGHT`, `STANDARD`, `ENHANCED`, `ENTITLED`.
-- `--sleep-seconds`: pausa entre requisicoes.
-- `--stop-on-error`: aborta no primeiro erro.
+### Fase 3 - revisao manual (opcional)
+
+```bash
+uv run review_matches.py
+```
+
+Interface interativa: abre perfil Scopus no navegador, pergunta accept/reject.
+Cria coluna `review_status`.
+
+## Estrutura do CSV final
+
+| Coluna | Descricao |
+|---|---|
+| `author_name` | Nome CAPES original |
+| `scopus_author_id` | ID Scopus |
+| `scopus_indexed_name` | Nome padronizado no Scopus |
+| `scopus_affiliation_name` | Afiliacao atual |
+| `document_count` | Nº de documentos |
+| `citation_count` | Total de citacoes |
+| `h_index` | Indice h |
+| `match_status` | `matched` / `not_found` / `api_error` / `error` |
+| `match_score` | Confianca do matching (0-155+) |
+| `query_used` | Query enviada a API |
+| `error_message` | Detalhe de erro |
+| `review_status` | (pos-revisao) `accepted` / `rejected` |
 
 ## Observacoes
 
-- A qualidade do matching por nome pode variar para homonimos.
-- Caso necessario, ajuste `--affiliation-hint` para refinar a busca.
-- O CSV final inclui colunas adicionais de rastreabilidade (`match_status`,
-  `match_score`, `query_used`, `error_message`).
+- Cada script grava checkpoints incrementais (configuravel com `--flush-every`);
+  interromper no meio nao perde progresso.
+- Para rodar em ambientes que suspendem o laptop, use `tmux` / `screen` ou
+  `systemd-inhibit --what=handle-lid-switch` em outro terminal.
+- Revisao manual recomendada para `match_score < 100` (clusters comuns: mesma
+  sigla de sobrenome em outra universidade pernambucana).
