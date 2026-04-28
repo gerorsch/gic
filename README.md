@@ -158,8 +158,17 @@ scripts/api-scopus/.venv/bin/python scripts/generate_oml_from_capes_docentes_ufr
 
 ## Análise exploratória
 
+Dois notebooks Jupyter em `scripts/`:
+
+- `eda_docentes_ufrpe.ipynb` — análise dos dados CAPES (filtragem, qualidade, tempo de carreira)
+- `eda_scopus_ufrpe.ipynb` — análise das métricas Scopus (matching, distribuições, top docentes)
+
+Para rodá-los localmente, instale também as dependências de visualização:
+
 ```bash
-scripts/api-scopus/.venv/bin/python -m jupyter notebook scripts/eda_docentes_ufrpe.ipynb
+cd scripts/api-scopus
+uv pip install matplotlib seaborn jupyter
+.venv/bin/jupyter notebook ../eda_scopus_ufrpe.ipynb
 ```
 
 ## Documentação adicional
