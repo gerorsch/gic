@@ -1,0 +1,14 @@
+.env
+**/.env
+__pycache__/
+*.pyc
+.venv/
+
+# Eclipse / Gradle workspace state
+Rosetta/.metadata/
+Rosetta/.gradle/
+Rosetta/**/build/
+Rosetta/**/.gradle/
+
+# Claude Code internal state
+**/.claude/

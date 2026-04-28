@@ -11,7 +11,8 @@ docentes UFRPE com `scopus_author_id`, `citation_count`, `h_index` e
 | `gic_main.py` | Fase 0 - busca inicial por nome (Author Search). |
 | `enrich_metrics.py` | Fase 1 - preenche metricas via Author Retrieval. |
 | `recover_not_found.py` | Fase 2 - reprocessa `not_found` com queries alternativas. |
-| `review_matches.py` | Fase 3 - revisao manual interativa de matches suspeitos. |
+| `auto_triage.py` | Fase 3a - triagem automatica (accept score>=100, reject aff!=UFRPE). |
+| `review_matches.py` | Fase 3b - revisao manual interativa dos pendentes. |
 | `gic_scopus_client.py` | Cliente comum da API Elsevier. |
 
 ## Configuracao
@@ -72,14 +73,30 @@ uv run enrich_metrics.py \
 
 Grava a saida final em `scopus_ufrpe.csv` (nome que o pipeline downstream espera).
 
-### Fase 3 - revisao manual (opcional)
+### Fase 3a - triagem automatica
 
 ```bash
-uv run review_matches.py
+uv run auto_triage.py
+```
+
+Decide os casos obvios sem intervencao humana:
+- `accepted` para `match_score >= 100` (afiliacao UFRPE garantida pela formula
+  de score: o teto sem o bonus de afiliacao eh 95).
+- `rejected` para score < 100 e afiliacao Scopus que nao mencione
+  "PERNAMBUCO"/"UFRPE".
+- restante (NA) entra na revisao manual.
+
+Cria/atualiza `data/raw/scopus/scopus_ufrpe_reviewed.csv` com a coluna
+`review_status`.
+
+### Fase 3b - revisao manual
+
+```bash
+uv run review_matches.py --min-score 0 --max-score 99 --resume
 ```
 
 Interface interativa: abre perfil Scopus no navegador, pergunta accept/reject.
-Cria coluna `review_status`.
+Com `--resume`, le do CSV ja triado e mostra apenas as linhas pendentes.
 
 ## Estrutura do CSV final
 

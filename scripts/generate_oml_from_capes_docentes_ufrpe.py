@@ -64,7 +64,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).parent.parent
-DATA_DOCENTES_DIR = PROJECT_ROOT / "data" / "raw"
+DATA_DOCENTES_DIR = PROJECT_ROOT / "data" / "raw" / "capes_docentes"
 DATA_SCOPUS_DIR = PROJECT_ROOT / "data" / "raw" / "scopus"
 DATA_PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 OML_OUTPUT_DIR = PROJECT_ROOT / "src" / "oml" / "gic.ufrpe.br" / "cti" / "description"
