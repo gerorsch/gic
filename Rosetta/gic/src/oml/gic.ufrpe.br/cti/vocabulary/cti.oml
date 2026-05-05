@@ -1,0 +1,91 @@
+vocabulary <http://gic.ufrpe.br/cti/vocabulary/cti#> as cti {
+
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	// ========================================================================
+	// CONCEITOS
+	// ========================================================================
+
+	// Pessoa com doutorado vinculada a um ou mais Programas de Pós-Graduação
+	// (PPG) da UFRPE como permanente ou colaborador.
+	concept Docente
+
+	// Programa de Pós-Graduação stricto sensu reconhecido pela CAPES.
+	concept PPG
+
+	// ========================================================================
+	// PROPRIEDADES — Docente
+	// ========================================================================
+
+	scalar property nm_docente [
+		domain Docente
+		range xsd:string
+		functional
+	]
+
+	scalar property an_titulacao [
+		domain Docente
+		range xsd:integer
+		functional
+	]
+
+	// PERMANENTE | COLABORADOR | VISITANTE
+	scalar property ds_categoria [
+		domain Docente
+		range xsd:string
+		functional
+	]
+
+	scalar property citation_count [
+		domain Docente
+		range xsd:integer
+		functional
+	]
+
+	scalar property h_index [
+		domain Docente
+		range xsd:integer
+		functional
+	]
+
+	scalar property document_count [
+		domain Docente
+		range xsd:integer
+		functional
+	]
+
+	// ========================================================================
+	// PROPRIEDADES — PPG
+	// ========================================================================
+
+	scalar property cd_programa_ies [
+		domain PPG
+		range xsd:string
+		functional
+	]
+
+	scalar property nm_programa_ies [
+		domain PPG
+		range xsd:string
+		functional
+	]
+
+	scalar property nm_area_conhecimento [
+		domain PPG
+		range xsd:string
+		functional
+	]
+
+	// ========================================================================
+	// RELAÇÕES
+	// ========================================================================
+
+	// Vínculo de um docente como permanente/colaborador a um PPG.
+	relation entity Vinculacao [
+		from Docente
+		to PPG
+		forward vinculado_a
+		reverse possui_docente
+	]
+
+}

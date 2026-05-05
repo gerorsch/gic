@@ -1,0 +1,30 @@
+PREFIX cti: <http://gic.ufrpe.br/cti/vocabulary/cti#>
+
+# ============================================================================
+# CONSULTA 4 — Comparação PERMANENTES vs COLABORADORES
+# ----------------------------------------------------------------------------
+# Quantifica diferenças de impacto científico entre as duas categorias de
+# vínculo previstas pela CAPES. Permanentes são, em tese, o núcleo do PPG;
+# colaboradores complementam. A consulta testa se essa distinção também
+# se reflete em métricas Scopus.
+# ============================================================================
+
+SELECT
+  ?categoria
+  (COUNT(?docente)               AS ?n_docentes)
+  (AVG(?h_index)                 AS ?media_h)
+  (AVG(?citation_count)          AS ?media_citacoes)
+  (AVG(?document_count)          AS ?media_documentos)
+  (AVG(2026 - ?an_titulacao)     AS ?media_anos_carreira)
+WHERE {
+  ?docente a cti:Docente ;
+           cti:ds_categoria   ?categoria ;
+           cti:an_titulacao   ?an_titulacao ;
+           cti:h_index        ?h_index ;
+           cti:citation_count ?citation_count ;
+           cti:document_count ?document_count .
+
+  FILTER (?an_titulacao > 0)
+}
+GROUP BY ?categoria
+ORDER BY ?categoria

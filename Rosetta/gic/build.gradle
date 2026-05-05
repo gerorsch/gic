@@ -1,9 +1,9 @@
-/* 
+/*
  * The Maven coordinates for the project artifact
  */
-ext.title = 'Example'
-description = 'This is an example'
-group = 'com.example'
+ext.title = 'GIC — Docentes UFRPE e Produção Científica'
+description = 'Ontologia OML cruzando docentes da pós-graduação UFRPE (CAPES) com métricas Scopus, para análise da relação entre tempo de carreira e impacto científico.'
+group = 'br.ufrpe.gic'
 version = '1.0.0'
 
 /* 
@@ -36,8 +36,8 @@ buildscript {
 ext {
     // Name of dataset (matches one used in .fuseki.ttl file)
     dataset = 'gic'
-    // Root ontology IRI of the dataset
-    rootIri = 'http://example.com/project/bundle'
+    // Root ontology IRI of the dataset (descrição com instâncias)
+    rootIri = 'http://gic.ufrpe.br/cti/description/docentes-ufrpe'
 }
 
 /*

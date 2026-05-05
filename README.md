@@ -14,7 +14,10 @@ gic/
 │   ├── raw/
 │   │   ├── capes_docentes/      # CSVs CAPES "Docentes da Pós-Graduação" 2017-2024
 │   │   └── scopus/              # CSV Scopus (saída da Fase 2 do pipeline)
-│   └── processed/               # docentes_ufrpe.csv (filtrado UFRPE + métricas)
+│   ├── processed/               # docentes_ufrpe.csv + docentes_ufrpe_vinculos.csv
+│   └── fuseki/                  # Volume persistente do Fuseki (criado no 1º run)
+├── docker/
+│   └── docker-compose.yml       # Apache Jena Fuseki (Sprint 3)
 ├── scripts/
 │   ├── generate_oml_from_capes_docentes_ufrpe.py    # Fase 1: CAPES -> OML
 │   ├── eda_docentes_ufrpe.ipynb                     # Análise exploratória
@@ -24,8 +27,11 @@ gic/
 │       ├── recover_not_found.py   # Recupera not_found com queries alternativas
 │       ├── auto_triage.py         # Triagem automática score>=100 / aff!=UFRPE
 │       └── review_matches.py      # Revisão manual interativa
-├── src/oml/                     # Saída OML (consumida por Rosetta/gic via Gradle)
-└── Rosetta/gic/                 # Workspace OML (build.gradle, catalog.xml)
+├── src/oml/gic.ufrpe.br/cti/    # Ontologia OML
+│   ├── vocabulary/cti.oml         # Classes e propriedades (Docente, PPG, ...)
+│   ├── description/docentes-ufrpe.oml   # Instâncias geradas pelo script
+│   └── bundle/cti.oml             # Bundle (vocabulary + description)
+└── Rosetta/gic/                 # Workspace Gradle (build.gradle, catalog.xml, src/sparql/)
 ```
 
 ## Pré-requisitos
@@ -171,8 +177,86 @@ uv pip install matplotlib seaborn jupyter
 .venv/bin/jupyter notebook ../eda_scopus_ufrpe.ipynb
 ```
 
+## Sprint 3 — Extrair o conhecimento (SPARQL + Fuseki)
+
+A Sprint 3 transforma o OML em um grafo RDF consultável: build com Gradle,
+carga em Apache Jena Fuseki (local ou Docker) e consultas SPARQL salvas em
+`Rosetta/gic/src/sparql/`.
+
+### Pré-requisitos adicionais
+
+```bash
+sudo apt install default-jdk    # Java 11+ para o Gradle
+# Docker (opcional, para Fuseki persistente):
+# https://docs.docker.com/engine/install/debian/
+```
+
+### Fluxo completo (Fuseki embutido no Gradle)
+
+```bash
+cd Rosetta/gic
+./gradlew check          # OML -> OWL/TTL + reasoning Openllet
+./gradlew startFuseki    # sobe Fuseki em-memória local
+./gradlew owlLoad        # carrega o grafo
+./gradlew owlQuery       # roda src/sparql/*.sparql -> build/results/*.json
+./gradlew stopFuseki
+```
+
+Saídas:
+- `build/owl/gic.ufrpe.br/cti/...` — grafo RDF/OWL gerado
+- `build/reports/reasoning.xml` — relatório do reasoner (validação)
+- `build/results/*.json` — uma resposta por consulta SPARQL
+
+### Fluxo com Fuseki persistente (Docker)
+
+Para preservar o dataset entre runs e expor um endpoint HTTP API-like:
+
+```bash
+# 1. Subir Fuseki em background
+cd docker
+docker compose up -d
+
+# 2. Gerar OWL (uma vez ou após mudar o OML)
+cd ../Rosetta/gic
+./gradlew omlToOwl
+
+# 3. Criar dataset 'gic' e carregar todos os RDFs (script idempotente)
+cd ../../docker
+./load_to_fuseki.sh    # cria dataset, limpa e popula via curl
+
+# 4. Consultar via interface (http://localhost:3030) ou via HTTP:
+curl --data-urlencode "query@../Rosetta/gic/src/sparql/1-carreira-vs-impacto.sparql" \
+     -H "Accept: application/sparql-results+json" \
+     http://localhost:3030/gic/sparql
+```
+
+### Consultas SPARQL
+
+| # | Arquivo | Pergunta |
+|---|---|---|
+| 1 | `1-carreira-vs-impacto.sparql` | **Principal.** Tempo de carreira (anos desde doutorado) × impacto (citações, h, documentos) por docente. |
+| 2 | `2-top20-h-index.sparql` | Top 20 docentes por índice h, com seus PPGs. |
+| 3 | `3-impacto-por-area.sparql` | Métricas Scopus médias agregadas por área de conhecimento (via PPG). |
+| 4 | `4-permanentes-vs-colaboradores.sparql` | Comparação entre as duas categorias CAPES. |
+| 5 | `5-bonus-interdisciplinaridade.sparql` | Bônus — docentes que atuam em múltiplos PPGs e seu impacto. |
+
+### Modelo OML
+
+- `cti:Docente` — pessoa identificada por `ID_PESSOA` da CAPES.
+  Propriedades: `nm_docente`, `an_titulacao`, `ds_categoria`,
+  `citation_count`, `h_index`, `document_count`.
+- `cti:PPG` — programa de pós-graduação. Propriedades: `cd_programa_ies`,
+  `nm_programa_ies`, `nm_area_conhecimento`.
+- Relação `cti:vinculado_a` (Docente → PPG, N:N) — um docente pode estar
+  vinculado a múltiplos PPGs e cada PPG tem N docentes.
+
+> A área de conhecimento e o nome do programa **não** são propriedades do
+> Docente, e sim do PPG. Para obter as áreas de um docente, navegue pela
+> relação `cti:vinculado_a` (ver consultas 3 e 5).
+
 ## Documentação adicional
 
 - `scripts/api-scopus/README.md` — detalhes do pipeline Scopus
-- `Sprint #2 - Codificar o Conhecimento.pdf` — escopo do sprint
+- `Sprint #2 - Codificar o Conhecimento.pdf` — escopo do sprint anterior
+- `Sprint #3 - Extrair o Conhecimento - Consultas SparQL e Fuseki.pptx` — escopo da Sprint 3
 - `Docente-e-Producao-Cientifica.pptx.pdf` — apresentação do projeto

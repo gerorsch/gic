@@ -1,0 +1,35 @@
+PREFIX cti: <http://gic.ufrpe.br/cti/vocabulary/cti#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# ============================================================================
+# CONSULTA PRINCIPAL — Tempo de carreira vs impacto científico
+# ----------------------------------------------------------------------------
+# Pergunta de pesquisa do grupo: existe relação entre o tempo de carreira
+# acadêmica (anos desde o doutorado) e o impacto científico (citações,
+# índice h) dos docentes da UFRPE?
+#
+# Cada linha do resultado é um docente. A análise (correlação, scatterplot)
+# acontece sobre o JSON gerado em build/results/.
+# ============================================================================
+
+SELECT
+  ?nome
+  ?an_titulacao
+  (2026 - ?an_titulacao AS ?anos_carreira)
+  ?citation_count
+  ?h_index
+  ?document_count
+  ?categoria
+WHERE {
+  ?docente a cti:Docente ;
+           cti:nm_docente      ?nome ;
+           cti:an_titulacao    ?an_titulacao ;
+           cti:ds_categoria    ?categoria ;
+           cti:citation_count  ?citation_count ;
+           cti:h_index         ?h_index ;
+           cti:document_count  ?document_count .
+
+  # Excluir docentes sem ano de doutorado registrado (an_titulacao == 0)
+  FILTER (?an_titulacao > 0)
+}
+ORDER BY DESC(?h_index) DESC(?citation_count)

@@ -48,7 +48,7 @@ import unicodedata
 import pandas as pd
 import logging
 from pathlib import Path
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict, Tuple, Optional, Any
 from dataclasses import dataclass, field
 from collections import defaultdict
 
@@ -67,7 +67,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DOCENTES_DIR = PROJECT_ROOT / "data" / "raw" / "capes_docentes"
 DATA_SCOPUS_DIR = PROJECT_ROOT / "data" / "raw" / "scopus"
 DATA_PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-OML_OUTPUT_DIR = PROJECT_ROOT / "src" / "oml" / "gic.ufrpe.br" / "cti" / "description"
+OML_OUTPUT_DIR = PROJECT_ROOT / "Rosetta" / "gic" / "src" / "oml" / "gic.ufrpe.br" / "cti" / "description"
 
 # ── Parâmetros de Filtragem ──────────────────────────────────────────────────
 # Ajuste estes valores conforme a necessidade:
@@ -96,23 +96,16 @@ class DocenteInstance:
     """
     Representa um DOCENTE com doutorado vinculado à UFRPE.
 
-    Atributos:
-        id: Identificador único OML (ex: "docente_000123")
-        nm_docente: Nome completo
-        an_titulacao: Ano de obtenção do doutorado
-        nm_area_conhecimento: Área de pesquisa
-        nm_programa: Programa de pós-graduação de vínculo
-        ds_categoria: Tipo de vínculo (PERMANENTE, COLABORADOR, etc.)
-        citation_count: Total de citações (Scopus) — None se indisponível
-        h_index: Índice h (Scopus) — None se indisponível
-        document_count: Total de documentos (Scopus) — None se indisponível
+    Identidade pelo ID_PESSOA (CAPES) — um docente pode estar vinculado a
+    múltiplos PPGs simultaneamente; a relação fica em ``vinculados_a``.
+
+    Área e programa NÃO são propriedades do Docente — pertencem ao PPG.
     """
     id: str
     nm_docente: str
     an_titulacao: int
-    nm_area_conhecimento: str
-    nm_programa: str
     ds_categoria: str
+    vinculados_a: List[str] = field(default_factory=list)
     citation_count: Optional[int] = None
     h_index: Optional[int] = None
     document_count: Optional[int] = None
@@ -146,6 +139,7 @@ class CAPESDocenteProcessor:
     # Colunas que esperamos encontrar nos CSVs de docentes CAPES.
     # Se o nome real da coluna for diferente no seu arquivo, ajuste aqui.
     COLUNAS_MAPEAMENTO = {
+        "id_pessoa":    "ID_PESSOA",
         "nome":         "NM_DOCENTE",
         "titulacao_ano":"AN_TITULACAO",
         "titulacao_grau":"NM_GRAU_TITULACAO",
@@ -160,8 +154,17 @@ class CAPESDocenteProcessor:
         "an_base":      "AN_BASE",
     }
 
+    # Prioridade de categorias quando o docente aparece em múltiplos PPGs com
+    # categorias diferentes — preferimos retratar o vínculo mais "forte".
+    CATEGORIA_PRIORIDADE = {
+        "PERMANENTE": 3,
+        "COLABORADOR": 2,
+        "VISITANTE": 1,
+    }
+
     def __init__(self):
         self.dataframe: Optional[pd.DataFrame] = None
+        self.canonical_df: Optional[pd.DataFrame] = None
         self.files_processed: List[str] = []
         DATA_PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -295,47 +298,103 @@ class CAPESDocenteProcessor:
 
         logger.info("Normalização concluída ✓")
 
-    # ── Deduplicação ─────────────────────────────────────────────────────────
+    # ── Agregação ────────────────────────────────────────────────────────────
 
-    def deduplicate_docentes(self) -> pd.DataFrame:
+    def aggregate_pairs(self) -> pd.DataFrame:
         """
-        Remove duplicatas de docentes que aparecem em múltiplos anos.
-
-        Estratégia: manter a entrada mais recente (AN_BASE mais alto) para
-        cada docente, usando NM_DOCENTE como chave de deduplicação.
+        Mantém uma linha por par (ID_PESSOA, CD_PROGRAMA_IES), com a entrada
+        mais recente (AN_BASE mais alto). Preserva múltiplos vínculos
+        docente↔PPG.
         """
-        col_nome = self.COLUNAS_MAPEAMENTO["nome"]
+        col_id = self.COLUNAS_MAPEAMENTO["id_pessoa"]
+        col_prog = self.COLUNAS_MAPEAMENTO["cd_programa"]
         col_base = self.COLUNAS_MAPEAMENTO["an_base"]
 
         n_antes = len(self.dataframe)
-
-        if col_base in self.dataframe.columns:
-            self.dataframe = (
-                self.dataframe
-                .sort_values(col_base, ascending=False)
-                .drop_duplicates(subset=[col_nome], keep='first')
-                .reset_index(drop=True)
-            )
-        else:
-            self.dataframe = (
-                self.dataframe
-                .drop_duplicates(subset=[col_nome], keep='first')
-                .reset_index(drop=True)
-            )
+        df = self.dataframe.dropna(subset=[col_id, col_prog])
+        if col_base in df.columns:
+            df = df.sort_values(col_base, ascending=False)
+        df = df.drop_duplicates(subset=[col_id, col_prog], keep='first').reset_index(drop=True)
+        self.dataframe = df
 
         logger.info(
-            f"Deduplicação por nome: {n_antes:,} → {len(self.dataframe):,} "
-            f"docentes únicos"
+            f"Pares únicos (ID_PESSOA, CD_PROGRAMA_IES): "
+            f"{n_antes:,} → {len(df):,}"
         )
-        return self.dataframe
+        return df
+
+    def build_canonical_docentes(self) -> pd.DataFrame:
+        """
+        Reduz para uma linha por docente (chave: ID_PESSOA), agregando:
+          - NM_DOCENTE: nome mais recente
+          - AN_TITULACAO: ano mais antigo (doutorado original)
+          - DS_CATEGORIA_DOCENTE: categoria de maior prioridade
+                (PERMANENTE > COLABORADOR > VISITANTE)
+        """
+        col_id = self.COLUNAS_MAPEAMENTO["id_pessoa"]
+        col_nome = self.COLUNAS_MAPEAMENTO["nome"]
+        col_titulacao = self.COLUNAS_MAPEAMENTO["titulacao_ano"]
+        col_cat = self.COLUNAS_MAPEAMENTO["categoria"]
+        col_base = self.COLUNAS_MAPEAMENTO["an_base"]
+
+        df = self.dataframe.copy()
+        df["_cat_prio"] = df[col_cat].map(self.CATEGORIA_PRIORIDADE).fillna(0)
+
+        # Para cada ID_PESSOA, ordenar por (cat_prio desc, AN_BASE desc) e
+        # pegar o NM_DOCENTE da entrada de maior prioridade.
+        df_sorted = df.sort_values(
+            ["_cat_prio", col_base], ascending=[False, False]
+        )
+        canonical = df_sorted.drop_duplicates(subset=[col_id], keep='first')
+
+        # AN_TITULACAO mínimo (doutorado mais antigo) por ID
+        an_min = (
+            df.dropna(subset=[col_titulacao])
+              .groupby(col_id)[col_titulacao].min()
+        )
+
+        canonical = canonical.set_index(col_id)
+        canonical[col_titulacao] = an_min
+        canonical = canonical.reset_index()
+
+        cols = [col_id, col_nome, col_titulacao, col_cat]
+        self.canonical_df = canonical[cols].reset_index(drop=True)
+        logger.info(
+            f"Docentes canônicos (únicos por ID_PESSOA): {len(self.canonical_df):,}"
+        )
+        return self.canonical_df
 
     # ── Exportação ───────────────────────────────────────────────────────────
 
-    def save_processed(self, filename="docentes_ufrpe.csv") -> Path:
-        out = DATA_PROCESSED_DIR / filename
-        self.dataframe.to_csv(out, sep=';', encoding='utf-8-sig', index=False)
-        logger.info(f"Dados salvos: {out} ({len(self.dataframe):,} linhas)")
-        return out
+    def save_processed(
+        self,
+        canonical_filename: str = "docentes_ufrpe.csv",
+        pairs_filename: str = "docentes_ufrpe_vinculos.csv",
+    ) -> Tuple[Path, Path]:
+        out_can = DATA_PROCESSED_DIR / canonical_filename
+        out_pairs = DATA_PROCESSED_DIR / pairs_filename
+
+        if self.canonical_df is not None:
+            self.canonical_df.to_csv(
+                out_can, sep=';', encoding='utf-8-sig', index=False
+            )
+            logger.info(
+                f"Canônico salvo: {out_can} ({len(self.canonical_df):,} docentes)"
+            )
+
+        col_id = self.COLUNAS_MAPEAMENTO["id_pessoa"]
+        col_prog = self.COLUNAS_MAPEAMENTO["cd_programa"]
+        col_nm_prog = self.COLUNAS_MAPEAMENTO["nm_programa"]
+        col_area = self.COLUNAS_MAPEAMENTO["area"]
+        cols_pairs = [c for c in [col_id, col_prog, col_nm_prog, col_area]
+                      if c in self.dataframe.columns]
+        self.dataframe[cols_pairs].to_csv(
+            out_pairs, sep=';', encoding='utf-8-sig', index=False
+        )
+        logger.info(
+            f"Vínculos salvos: {out_pairs} ({len(self.dataframe):,} pares)"
+        )
+        return out_can, out_pairs
 
 
 # ============================================================================
@@ -426,31 +485,55 @@ class ScopusEnricher:
 # ============================================================================
 
 class DocenteInstanceExtractor:
-    """Extrai DocenteInstance e PPGInstance a partir do DataFrame processado."""
+    """Extrai DocenteInstance e PPGInstance a partir dos DataFrames processados."""
 
-    def __init__(self, dataframe: pd.DataFrame, col_map: dict):
-        self.df = dataframe
+    def __init__(
+        self,
+        canonical_df: pd.DataFrame,
+        pairs_df: pd.DataFrame,
+        col_map: dict,
+    ):
+        # canonical_df: 1 linha por ID_PESSOA (com métricas Scopus mescladas).
+        # pairs_df:     1 linha por par (ID_PESSOA, CD_PROGRAMA_IES) — a partir
+        #               dele extraímos PPGs e os vínculos.
+        self.canonical_df = canonical_df
+        self.pairs_df = pairs_df
         self.col = col_map
         self.docente_instances: Dict[str, DocenteInstance] = {}
         self.ppg_instances: Dict[str, PPGInstance] = {}
 
+    @staticmethod
+    def _docente_id(id_pessoa) -> str:
+        return f"docente_{int(id_pessoa)}"
+
+    @staticmethod
+    def _ppg_id(cd_programa) -> str:
+        return f"ppg_{str(cd_programa).strip()}"
+
     def extract_docentes(self) -> Dict[str, DocenteInstance]:
         logger.info("Extraindo instâncias de Docente...")
 
-        for idx, row in self.df.iterrows():
-            nome = str(row.get(self.col["nome"], ""))
-            doc_id = f"docente_{idx:06d}"
+        col_id = self.col["id_pessoa"]
 
+        # Vínculos por docente (lista de ppg_ids), construída a partir do pairs_df
+        vinculos_por_docente: Dict[str, List[str]] = defaultdict(list)
+        for _, row in self.pairs_df.iterrows():
+            doc_id = self._docente_id(row[col_id])
+            ppg_id = self._ppg_id(row[self.col["cd_programa"]])
+            if ppg_id not in vinculos_por_docente[doc_id]:
+                vinculos_por_docente[doc_id].append(ppg_id)
+
+        for _, row in self.canonical_df.iterrows():
+            doc_id = self._docente_id(row[col_id])
             an_tit = row.get(self.col["titulacao_ano"])
             an_tit = int(an_tit) if pd.notna(an_tit) else 0
 
             self.docente_instances[doc_id] = DocenteInstance(
                 id=doc_id,
-                nm_docente=nome,
+                nm_docente=str(row.get(self.col["nome"], "")),
                 an_titulacao=an_tit,
-                nm_area_conhecimento=str(row.get(self.col["area"], "")),
-                nm_programa=str(row.get(self.col["nm_programa"], "")),
                 ds_categoria=str(row.get(self.col["categoria"], "")),
+                vinculados_a=sorted(vinculos_por_docente.get(doc_id, [])),
                 citation_count=(
                     int(row['citation_count'])
                     if pd.notna(row.get('citation_count')) else None
@@ -465,7 +548,11 @@ class DocenteInstanceExtractor:
                 ),
             )
 
-        logger.info(f"  {len(self.docente_instances)} docentes extraídos")
+        n_vinc = sum(len(d.vinculados_a) for d in self.docente_instances.values())
+        logger.info(
+            f"  {len(self.docente_instances)} docentes extraídos "
+            f"({n_vinc} vínculos a PPGs)"
+        )
         return self.docente_instances
 
     def extract_ppgs(self) -> Dict[str, PPGInstance]:
@@ -475,13 +562,13 @@ class DocenteInstanceExtractor:
         col_nm = self.col["nm_programa"]
         col_area = self.col["area"]
 
-        if col_cd not in self.df.columns:
+        if col_cd not in self.pairs_df.columns:
             logger.warning(f"  Coluna {col_cd} ausente — PPGs não extraídos")
             return self.ppg_instances
 
-        unique = self.df.drop_duplicates(subset=[col_cd], keep='first')
+        unique = self.pairs_df.drop_duplicates(subset=[col_cd], keep='first')
         for _, row in unique.iterrows():
-            ppg_id = f"ppg_{row[col_cd]}"
+            ppg_id = self._ppg_id(row[col_cd])
             self.ppg_instances[ppg_id] = PPGInstance(
                 id=ppg_id,
                 cd_programa_ies=str(row[col_cd]),
@@ -525,10 +612,8 @@ class OMLDocenteGenerator:
         ppgs: Dict[str, PPGInstance],
     ) -> str:
         lines = [
-            '@dc:description "Docentes da UFRPE — Tempo de Carreira e Impacto Científico"',
             f'description <{DESCRIPTION_URI}#> as docentes-ufrpe {{',
             '',
-            f'\tuses <{DC_URI}> as {DC_NS}',
             f'\tuses <{VOCABULARY_URI}#> as {VOCABULARY_NS}',
             '',
             '\t// =================================================================',
@@ -558,7 +643,6 @@ class OMLDocenteGenerator:
             lines.append(f'\tinstance {doc.id} : {VOCABULARY_NS}:Docente [')
             lines.append(f'\t\t{VOCABULARY_NS}:nm_docente "{self._esc(doc.nm_docente)}"')
             lines.append(f'\t\t{VOCABULARY_NS}:an_titulacao {doc.an_titulacao}')
-            lines.append(f'\t\t{VOCABULARY_NS}:nm_area_conhecimento "{self._esc(doc.nm_area_conhecimento)}"')
             lines.append(f'\t\t{VOCABULARY_NS}:ds_categoria "{doc.ds_categoria}"')
 
             if doc.citation_count is not None:
@@ -567,6 +651,9 @@ class OMLDocenteGenerator:
                 lines.append(f'\t\t{VOCABULARY_NS}:h_index {doc.h_index}')
             if doc.document_count is not None:
                 lines.append(f'\t\t{VOCABULARY_NS}:document_count {doc.document_count}')
+
+            for ppg_id in doc.vinculados_a:
+                lines.append(f'\t\t{VOCABULARY_NS}:vinculado_a {ppg_id}')
 
             lines.append('\t]')
 
@@ -606,27 +693,32 @@ def main() -> int:
         proc = CAPESDocenteProcessor()
         proc.read_csv_files()
 
-        # ── ETAPA 2: Filtrar UFRPE + Doutores ────────────────────────
+        # ── ETAPA 2: Filtrar UFRPE + Doutores e agregar pares ─────────
         logger.info("\n[2/5] Filtrando UFRPE + Doutores...")
         proc.filter_ufrpe_doutores()
         proc.normalize()
-        proc.deduplicate_docentes()
+        proc.aggregate_pairs()
+        proc.build_canonical_docentes()
 
-        # ── ETAPA 3: Enriquecer com Scopus ────────────────────────────
+        # ── ETAPA 3: Enriquecer canônico com Scopus ───────────────────
         logger.info("\n[3/5] Enriquecendo com dados Scopus...")
         enricher = ScopusEnricher()
         has_scopus = enricher.load()
         if has_scopus:
-            proc.dataframe = enricher.enrich(
-                proc.dataframe,
+            proc.canonical_df = enricher.enrich(
+                proc.canonical_df,
                 proc.COLUNAS_MAPEAMENTO["nome"]
             )
+        else:
+            for col in ['citation_count', 'h_index', 'document_count']:
+                proc.canonical_df[col] = None
 
         # ── ETAPA 4: Extrair instâncias ───────────────────────────────
         logger.info("\n[4/5] Extraindo instâncias...")
         extractor = DocenteInstanceExtractor(
-            proc.dataframe,
-            proc.COLUNAS_MAPEAMENTO
+            proc.canonical_df,
+            proc.dataframe,  # pares (ID_PESSOA, CD_PROGRAMA_IES)
+            proc.COLUNAS_MAPEAMENTO,
         )
         extractor.extract_docentes()
         extractor.extract_ppgs()

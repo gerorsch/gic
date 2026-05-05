@@ -1,0 +1,31 @@
+PREFIX cti: <http://gic.ufrpe.br/cti/vocabulary/cti#>
+
+# ============================================================================
+# CONSULTA 2 — Top 20 docentes por índice h
+# ----------------------------------------------------------------------------
+# Lista os 20 docentes da UFRPE com maior índice h (Scopus), incluindo seus
+# anos de carreira e o(s) PPG(s) ao qual estão vinculados. Útil para
+# identificar pesquisadores de maior impacto e seus programas de atuação.
+# ============================================================================
+
+SELECT
+  ?nome
+  ?h_index
+  ?citation_count
+  (2026 - ?an_titulacao AS ?anos_carreira)
+  (GROUP_CONCAT(DISTINCT ?nm_programa ; separator=" | ") AS ?ppgs)
+WHERE {
+  ?docente a cti:Docente ;
+           cti:nm_docente     ?nome ;
+           cti:an_titulacao   ?an_titulacao ;
+           cti:h_index        ?h_index ;
+           cti:citation_count ?citation_count ;
+           cti:vinculado_a    ?ppg .
+
+  ?ppg cti:nm_programa_ies ?nm_programa .
+
+  FILTER (?an_titulacao > 0)
+}
+GROUP BY ?nome ?h_index ?citation_count ?an_titulacao
+ORDER BY DESC(?h_index) DESC(?citation_count)
+LIMIT 20

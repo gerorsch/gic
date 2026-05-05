@@ -1,0 +1,34 @@
+PREFIX cti: <http://gic.ufrpe.br/cti/vocabulary/cti#>
+
+# ============================================================================
+# CONSULTA 5 (BÔNUS) — Docentes interdisciplinares e seu impacto
+# ----------------------------------------------------------------------------
+# Foge ao escopo da pergunta principal mas explora os dados que já temos:
+# docentes que atuam em múltiplos PPGs costumam transitar entre áreas. Esta
+# consulta lista os mais "interdisciplinares" (mais PPGs distintos) e
+# verifica como se compara o impacto científico desses docentes.
+#
+# Critério: pelo menos 2 PPGs distintos. Apresentamos as áreas que cobrem
+# concatenadas para inspeção qualitativa.
+# ============================================================================
+
+SELECT
+  ?nome
+  (COUNT(DISTINCT ?ppg)  AS ?num_ppgs)
+  (COUNT(DISTINCT ?area) AS ?num_areas)
+  ?h_index
+  ?citation_count
+  (GROUP_CONCAT(DISTINCT ?area ; separator=" | ") AS ?areas)
+WHERE {
+  ?docente a cti:Docente ;
+           cti:nm_docente     ?nome ;
+           cti:h_index        ?h_index ;
+           cti:citation_count ?citation_count ;
+           cti:vinculado_a    ?ppg .
+
+  ?ppg cti:nm_area_conhecimento ?area .
+}
+GROUP BY ?nome ?h_index ?citation_count
+HAVING (COUNT(DISTINCT ?ppg) >= 2)
+ORDER BY DESC(?num_ppgs) DESC(?h_index)
+LIMIT 30

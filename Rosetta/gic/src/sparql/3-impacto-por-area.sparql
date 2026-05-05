@@ -1,0 +1,31 @@
+PREFIX cti: <http://gic.ufrpe.br/cti/vocabulary/cti#>
+
+# ============================================================================
+# CONSULTA 3 — Impacto científico médio por área de conhecimento
+# ----------------------------------------------------------------------------
+# Agrega métricas Scopus por ÁREA DE CONHECIMENTO (vinda do PPG, não do
+# docente — um docente em N PPGs contribui para todas as suas áreas).
+#
+# Útil para comparar produtividade entre grandes áreas da pós-graduação
+# UFRPE (Agronomia, Ecologia, Biotecnologia, Letras, etc.).
+# ============================================================================
+
+SELECT
+  ?area
+  (COUNT(DISTINCT ?docente) AS ?num_docentes)
+  (AVG(?h_index)         AS ?media_h)
+  (MAX(?h_index)         AS ?max_h)
+  (AVG(?citation_count)  AS ?media_citacoes)
+  (SUM(?document_count)  AS ?total_documentos)
+WHERE {
+  ?docente a cti:Docente ;
+           cti:vinculado_a    ?ppg ;
+           cti:h_index        ?h_index ;
+           cti:citation_count ?citation_count ;
+           cti:document_count ?document_count .
+
+  ?ppg cti:nm_area_conhecimento ?area .
+}
+GROUP BY ?area
+HAVING (COUNT(DISTINCT ?docente) >= 5)
+ORDER BY DESC(?media_h)

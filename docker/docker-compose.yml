@@ -1,0 +1,25 @@
+# Apache Jena Fuseki — triplestore para o dataset GIC
+#
+# Uso (a partir desta pasta):
+#   docker compose up -d        # sobe em background na porta 3030
+#   docker compose down         # encerra (volume persistente preserva dados)
+#
+# Após subir, criar o dataset 'gic' uma vez:
+#   1. Abrir http://localhost:3030 (login admin/admin)
+#   2. Manage > new dataset > nome: gic, tipo: Persistent (TDB2)
+#   3. Add data > selecionar todos os .ttl/.owl em ../Rosetta/gic/build/owl/
+#
+# Endpoint SPARQL: http://localhost:3030/gic/sparql
+# Endpoint API HTTP GET: http://localhost:3030/gic/sparql?query=<SPARQL>
+
+services:
+  fuseki:
+    image: stain/jena-fuseki
+    container_name: fuseki-gic
+    ports:
+      - "3030:3030"
+    environment:
+      ADMIN_PASSWORD: admin
+    volumes:
+      - ../data/fuseki:/fuseki
+    restart: unless-stopped

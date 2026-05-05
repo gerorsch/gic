@@ -9,6 +9,13 @@ Rosetta/.metadata/
 Rosetta/.gradle/
 Rosetta/**/build/
 Rosetta/**/.gradle/
+Rosetta/**/.fuseki/
+
+# Fuseki Docker volume
+data/fuseki/
+
+# Notas privadas (chat de equipe, contém números pessoais)
+conversa.txt
 
 # Claude Code internal state
 **/.claude/
